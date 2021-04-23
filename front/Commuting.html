@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="commuting.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>출퇴</title>
+</head>
+<body>
+  <div class="back_ground">
+    <div class="container">
+      <center>
+        <div class="middle">
+          <div class="left">
+            <div id="change_date" class="clock">
+            </div>
+            <div id="change_time" class="clock">
+            </div>
+            <div id="button_display">
+              <input type="button" value="출근" onclick="change_text()">
+              <input type="button" value="퇴근" onclick="change_text2()">
+            </div>
+          </div>
+          <div class="right">
+            <div class="right_box">
+              <div id="now_clock">
+              </div>
+              <div id="now_text">
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
+  </div>
+  <script src="commuting.js" type="text/javascript"></script>
+</body>
+</html>
