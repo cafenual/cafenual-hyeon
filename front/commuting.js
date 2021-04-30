@@ -1,5 +1,5 @@
 function showClock() {  //showClock 함수 설정
-  const showclock_tag=document.querySelector("#change_date");
+  const showclock_tag=document.querySelector("#change_date"); //태그,id,클래스
   const showclock_tag1=document.querySelector("#change_time");
   function change_clock(){
     let work_time = new Date();
