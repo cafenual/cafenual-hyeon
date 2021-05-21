@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Stylish&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap");
-.back_ground {
+#commuting .back_ground {
   height: calc(100vh);
 
   width: 100%;
 }
-.container {
+#commuting .container {
   left: 50%;
   position: fixed;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.middle {
+#commuting .middle {
   display: flex;
   max-height: 800px;
   height: 600px;
@@ -19,27 +19,27 @@
   background-image: url(cafe.jpg);
   background-size: cover;
 }
-.left {
+#commuting .left {
   width: 500px;
 }
-.right {
+#commuting .right {
   width: 400px;
   font-size: 30px;
   font-family: "Noto Sans KR", sans-serif;
   color: white;
   position: relative; /*position에서 고정될 범위*/
 }
-.clock {
+#commuting .clock {
   margin: auto;
   margin-top: 50px;
   font-size: 40px;
   font-family: "Stylish", sans-serif;
 }
-#button_display {
+#commuting #button_display {
   height: 400;
   margin-top: 90px;
 }
-#button_display input[type="button"] {
+#commuting #button_display button {
   margin: 30px;
   height: 80px;
   width: 250px;
@@ -52,7 +52,7 @@
   border-radius: 50px;
 }
 
-#button_display input[type="button"]:hover {
+#commuting #button_display button:hover {
   margin: 30px;
   height: 80px;
   width: 250px;
@@ -63,7 +63,7 @@
   color: #3b240b;
   border-radius: 50px;
 }
-.right_box {
+#commuting .right_box {
   position: absolute; /*position에서 움직이는 아(x축과 y축을 꼭 주어야 함)*/
   bottom: 50px;
   right: 65px;
