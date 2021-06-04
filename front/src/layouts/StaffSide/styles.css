@@ -1,0 +1,42 @@
+#StaffSide {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  border-right: 1px solid #d8d5d5;
+  background-color: #424242;
+  top: 75px;
+  z-index: 10;
+}
+
+.nav-title {
+  padding: 10px 20px;
+  color: #a4a4a4;
+}
+
+#StaffSide .nav li {
+  margin: 4px 17px;
+  border-radius: 10px;
+}
+
+.nav li a {
+  color: #f2f2f2;
+  font-size: 18px;
+  display: flex;
+  padding: 10px 45px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.active {
+  background: #f2f2f2;
+}
+.active svg,
+.active span {
+  color: #424242;
+  font-weight: bolder;
+}
+
+.nav li a svg {
+  margin-right: 5px;
+}

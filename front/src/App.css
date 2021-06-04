@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Sniglet&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #fcfcfc;
+  padding: 77px 0 0 250px;
+}
+
+#container {
+  position: relative;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+#content {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; /* input 박스 width:100% 했을 때 튀어나가는거 없애기 */
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+input:focus {
+  outline: none;
+}
+
+#main {
+  padding: 0px;
+  min-width: 1900px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
