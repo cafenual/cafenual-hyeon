@@ -1,0 +1,48 @@
+#DashBoard {
+  padding: 77px 0 0 250px;
+}
+#DashBoard .all-block {
+  display: flex;
+  margin: 20px 20px 20px 30px; /*위 오른쪽 아래 왼쪽*/
+}
+#DashBoard .left-top {
+  display: flex;
+}
+#DashBoard .pofile-img {
+  margin: 0px;
+}
+#DashBoard .dashboard-box {
+  background-color: #fff;
+  margin: 15px;
+  box-shadow: 5px 5px 5px #d8d8d8;
+  border-radius: 5px;
+}
+#DashBoard .new-everything {
+  width: 460px;
+}
+#DashBoard .schedule {
+  width: 660px;
+  height: 440px;
+}
+#DashBoard .profile-box {
+  width: 400px;
+  height: 350px;
+}
+#DashBoard button {
+  width: 160px;
+  height: 50px;
+  margin: 20px;
+  background-color: #2e2e2e;
+  outline: 0px;
+  color: #fafafa;
+  font-size: 17px;
+  font-weight: 580;
+  cursor: pointer;
+  border-radius: 40px;
+}
+#DashBoard .important-notice {
+  height: 345px;
+}
+#DashBoard .day-work {
+  height: 450px;
+}

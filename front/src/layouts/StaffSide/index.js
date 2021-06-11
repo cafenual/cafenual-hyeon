@@ -18,7 +18,7 @@ const StaffSide = () => {
         </div>
         <ul>
           <li>
-            <NavLink to={"/staff"} exact activeStyle={activeStyle}>
+            <NavLink to={"/dashboard"} exact activeStyle={activeStyle}>
               <AiFillHome />
               <span>Home</span>
             </NavLink>

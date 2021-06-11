@@ -26,7 +26,7 @@ const Header = () => {
             <ul>
               {/* 목록 태그 */}
               <li>
-                <NavLink to={"/staff"} activStyle={activeStyle}>
+                <NavLink to={"/dashboard"} activStyle={activeStyle}>
                   <BsGrid />
                   <span>대시보드</span> {/*div와 비슷하지만 인라인 타입*/}
                 </NavLink>
@@ -54,12 +54,6 @@ const Header = () => {
           </div>
           <div className="right-nav">
             <ul>
-              <li>
-                <a href="/login">로그인</a>
-              </li>
-              <li>
-                <a href="/join">회원가임</a>
-              </li>
               <li>
                 <a>로그아웃</a>
               </li>

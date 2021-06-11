@@ -40,3 +40,14 @@
 .nav li a svg {
   margin-right: 5px;
 }
+
+@media screen and (max-width: 1800px) {
+  body #StaffSide .profile-box {
+    display: none;
+  }
+}
+@media screen and (min-width: 1800px) {
+  #StaffSide .profile-box {
+    display: none !important; /*1.!important 2.세밀하게 박스가 들어간거 3.밑으로 내려갈때 우선순위*/
+  }
+}

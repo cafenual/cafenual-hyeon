@@ -1,6 +1,7 @@
-import Commute from "./pages/Commute";
-import Join from "./pages/Join";
-import Login from "./pages/Login";
+import Commute from "pages/Commute";
+import Join from "pages/Join";
+import Login from "pages/Login";
+import DashBoard from "pages/DashBoard"
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
@@ -10,8 +11,8 @@ function App() {
       <BrowserRouter>
         <div id="main">
           <Switch>
-            {/*/로만 남겨놨었는데 그러니깐 다른 아이들이 안넘어가짐*/}
-            <Route path="/login" component={Login} />
+            <Route path="/dashboard" exact component={DashBoard} />
+            <Route path="/" exact component={Login} /> {/* exact를 안치면 정확하게가 아니어서 다른 페이지에 /가 붙어 있으므로 다른 페이지로 이동이 안됨 */}
             <Route path="/commute" component={Commute} />
             <Route path="/join" component={Join} />
           </Switch>

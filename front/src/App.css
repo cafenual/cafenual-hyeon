@@ -3,8 +3,12 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  background-color: #fcfcfc;
+  background-color: #fafafa;
   /*padding: 77px 0 0 250px;*/
+}
+
+button {
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 #container {
