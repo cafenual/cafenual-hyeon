@@ -8,7 +8,7 @@
   width: 100%;
   background-color: #2e2e2e;
   min-width: 970px;
-  height: calc(7.8vh);
+  height: 80px;
 }
 
 #Header .header-menu {
@@ -16,7 +16,7 @@
   align-items: center;
   padding: 15px 20px;
   z-index: 10;
-  height: calc(7.8vh);
+  height: 80px;
 }
 
 #Header .header-logo {

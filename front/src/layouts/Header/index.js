@@ -55,7 +55,7 @@ const Header = () => {
           <div className="right-nav">
             <ul>
               <li>
-                <a>로그아웃</a>
+                <a href="/">로그아웃</a>
               </li>
             </ul>
           </div>
