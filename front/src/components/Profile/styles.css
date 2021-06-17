@@ -1,7 +1,5 @@
 #Profile {
   margin: 0px;
-  width: 340px;
-  height: 260px;
 }
 #Profile .profile-top {
   display: flex;
@@ -20,16 +18,15 @@ svg {
   padding: 20px;
 }
 #Profile .profile-bottom {
-  width: 230px;
 }
 #Profile .info-option {
-  width: 80px;
   display: inline-block;
   text-align: center;
   color: #767676;
+  font-size: calc(110%);
 }
 #Profile .info-des {
-  font-size: 18px;
+  font-size: calc(120%);
   display: inline-block;
   width: 150px;
 }

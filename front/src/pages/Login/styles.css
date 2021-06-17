@@ -8,22 +8,23 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  width: calc(40%);
-  height: calc(40%);
+  width: 500px;
+  border: #fff;
+  height: 400px;
 }
 .login-title {
   text-align: center;
-  padding-bottom: calc(7%);
-  font-size: calc(200%);
+  padding-bottom: 40px;
+  font-size: 35px;
   color: #333;
   margin-bottom: 10px;
 }
 #Login input {
   width: 100%;
-  height: calc(20%);
+  height: 45px;
   margin-bottom: 30px;
-  padding: 5px;
-  border: #fafafa;
+  padding: 10px;
+  border: #fff;
   border-bottom: 2px solid #d8d8d8;
   background-color: #fafafa;
 }

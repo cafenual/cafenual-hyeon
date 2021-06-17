@@ -1,37 +1,66 @@
 #DashBoard {
-  padding: 77px 0 0 250px;
+  padding: calc(7.8vh) 0 0 250px;
 }
 #DashBoard .all-block {
   display: flex;
-  margin: 20px 20px 20px 30px; /*위 오른쪽 아래 왼쪽*/
+  width: 100%;
+  height: auto;
+  margin: calc(1%) calc(1%) calc(1%) calc(1%); /*위 오른쪽 아래 왼쪽*/
+}
+#DashBoard .left-block {
+  width: calc(98% - 380px);
+}
+#DashBoard .right-block {
+  width: 380px;
+  min-width: 330px;
 }
 #DashBoard .left-top {
   display: flex;
 }
-#DashBoard .pofile-img {
-  margin: 0px;
-}
-#DashBoard .dashboard-box {
+#DashBoard .new-everything {
+  width: calc(40%);
+  height: calc(44vh);
   background-color: #fff;
   margin: 15px;
   box-shadow: 5px 5px 5px #d8d8d8;
   border-radius: 5px;
 }
-#DashBoard .new-everything {
-  width: 460px;
-}
 #DashBoard .schedule {
-  width: 660px;
-  height: 440px;
+  width: calc(60%);
+  height: calc(44vh);
+  background-color: #fff;
+  margin: 15px;
+  box-shadow: 5px 5px 5px #d8d8d8;
+  border-radius: 5px;
+}
+#DashBoard .important-notice {
+  height: calc(38vh);
+  background-color: #fff;
+  margin: 15px;
+  box-shadow: 5px 5px 5px #d8d8d8;
+  border-radius: 5px;
 }
 #DashBoard .profile-box {
-  width: 400px;
   height: 350px;
+  margin: 15px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px #d8d8d8;
+  border-radius: 5px;
+  padding: auto;
+  display: block;
+}
+#DashBoard .profile-components {
+  margin-bottom: 30px;
+}
+#DashBoard .btns-block {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
 #DashBoard button {
-  width: 160px;
-  height: 50px;
-  margin: 20px;
+  width: 150px;
+  height: 45px;
   background-color: #2e2e2e;
   outline: 0px;
   color: #fafafa;
@@ -40,9 +69,10 @@
   cursor: pointer;
   border-radius: 40px;
 }
-#DashBoard .important-notice {
-  height: 345px;
-}
 #DashBoard .day-work {
-  height: 450px;
+  height: calc(83.5vh - 350px);
+  background-color: #fff;
+  margin: 15px;
+  box-shadow: 5px 5px 5px #d8d8d8;
+  border-radius: 5px;
 }
