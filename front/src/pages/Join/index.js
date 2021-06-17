@@ -41,11 +41,15 @@ const Join = () => {
           <form>
             <label>이름</label>
             <input type="text" name="user_id" required />
-            <label>이메일</label>
-            <div class="email_check">
-              <center>
-                <a>이메일 확인</a>
-              </center>
+            <div className="email-area">
+              <div>
+                <label>이메일</label>
+              </div>
+              <div class="email_check">
+                <center>
+                  <a>이메일 확인</a>
+                </center>
+              </div>
             </div>
             <input type="email" name="user_email" required />
             <label>비밀번호</label>

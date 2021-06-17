@@ -7,31 +7,30 @@
   top: 0;
   width: 100%;
   background-color: #2e2e2e;
-  min-width: 1100px;
+  min-width: 930px;
 }
 
-.header-menu {
-  min-width: 900px;
+#Header .header-menu {
   display: flex;
   align-items: center;
   padding: 15px 20px;
   z-index: 10;
 }
 
-.header-logo {
+#Header .header-logo {
   padding-left: 20px;
 }
 
-.header-logo a {
+#Header .header-logo a {
   display: flex;
   align-items: center;
 }
 
-.header-logo svg {
+#Header .header-logo svg {
   color: rgb(18, 113, 175);
 }
 
-.header-logo .h1 {
+#Header .header-logo .h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   padding: 0px 60px 0px 5px;
@@ -39,27 +38,27 @@
   color: #ffffff;
 }
 
-.header-nav {
+#Header .header-nav {
   display: flex;
   width: 100%;
   justify-content: space-between; /*크기만큼 알아서 공백을 줌*/
   align-items: center;
 }
 
-.header-nav .left-nav li {
+#Header .header-nav .left-nav li {
   float: left;
   font-size: 18px;
   border-radius: 10px;
 }
 
-.header-nav .left-nav li a {
+#Header .header-nav .left-nav li a {
   color: #f2f2f2;
   padding: 10px 20px;
   border-radius: 10px;
   margin-left: 10px;
 }
 
-.header-nav .right-nav li {
+#Header .header-nav .right-nav li {
   float: left;
   padding: 10px 13px;
   font-size: 16px;
@@ -68,7 +67,7 @@
 #Header a {
   color: #f2f2f2;
 }
-img {
+#Header img {
   width: 45px;
   height: 45px;
 }
