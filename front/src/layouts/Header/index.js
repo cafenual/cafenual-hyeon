@@ -7,7 +7,7 @@ import cafe from "./cafe.png";
 
 const Header = () => {
   const activeStyle = {
-    backgroundColor: "#F2F2F2",
+    backgroundColor: "#FAFAFA",
     color: "#585858",
   };
 

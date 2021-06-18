@@ -8,7 +8,8 @@
   width: 100%;
   background-color: #2e2e2e;
   min-width: 970px;
-  height: 80px;
+  height: 65px;
+  z-index: 1;
 }
 
 #Header .header-menu {
@@ -16,7 +17,7 @@
   align-items: center;
   padding: 15px 20px;
   z-index: 10;
-  height: 80px;
+  height: 65px;
 }
 
 #Header .header-logo {
@@ -36,7 +37,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;
   padding: 0px 50px 0px 5px;
-  font-size: 200%;
+  font-size: 180%;
   color: #ffffff;
 }
 
@@ -49,7 +50,7 @@
 
 #Header .header-nav .left-nav li {
   float: left;
-  font-size: 120%;
+  font-size: 115%;
   border-radius: 10px;
 }
 
@@ -63,7 +64,7 @@
 #Header .header-nav .right-nav li {
   float: left;
   padding: 10px 13px;
-  font-size: 120%;
+  font-size: 100%;
   color: #f2f2f2;
 }
 #Header a {

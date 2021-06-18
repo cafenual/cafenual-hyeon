@@ -6,7 +6,7 @@ import "./styles.css";
 
 const StaffSide = () => {
   const activeStyle = {
-    backgroundColor: "#F2F2F2",
+    backgroundColor: "#FAFAFA",
     color: "#585858",
   };
 

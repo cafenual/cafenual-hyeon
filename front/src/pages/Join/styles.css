@@ -13,9 +13,7 @@ body {
   transform: translate(-50%, -50%);
 
   width: 455px;
-  min-width: 455px;
   height: 680px;
-  position: block;
 }
 #Join .joinform_title {
   margin-bottom: 45px;
@@ -24,7 +22,7 @@ body {
 }
 #Join input,
 button {
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   height: 25px;
   width: 450px;
   margin-bottom: 40px;

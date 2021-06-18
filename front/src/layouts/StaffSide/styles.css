@@ -1,11 +1,11 @@
 #StaffSide {
-  width: 250px;
+  width: 240px;
   height: 100%;
   position: fixed;
   left: 0;
   border-right: 1px solid #d8d5d5;
   background-color: #424242;
-  top: 79px;
+  top: 64px;
   z-index: 10;
 }
 
