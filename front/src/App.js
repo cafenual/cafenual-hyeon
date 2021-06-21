@@ -5,6 +5,7 @@ import DashBoard from "pages/DashBoard";
 import NoticeList from "pages/Notice/NoticeList";
 import NoticeUpload from "pages/Notice/NoticeUpload";
 import NoticeDetail from "pages/Notice/NoticeDetail";
+import NoticeEdit from "pages/Notice/NoticeEdit";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
@@ -21,7 +22,8 @@ function App() {
             <Route path="/join" component={Join} />
             <Route path="/notice" exact component={NoticeList} />
             <Route path="/notice/upload" exact component={NoticeUpload} />
-            <Route path="/notice/detail" component={NoticeDetail} />
+            <Route path="/notice/detail" exact component={NoticeDetail} />
+            <Route path="/notice/edit" exact component={NoticeEdit} />
           </Switch>
         </div>
       </BrowserRouter>
