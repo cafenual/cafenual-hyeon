@@ -2,15 +2,11 @@
   background-color: #fefefe;
 }
 #NoticeEdit .back-ground {
-  height: calc(100vh);
+  height: calc(85vh);
   width: 100%;
 }
 #NoticeEdit .upload-form {
-  left: 50%; /*화면안에 정가운데에 옮기는 작업(물건)*/
-  position: fixed;
-  transform: translate(-50%, -50%);
-
-  padding-top: 1000px;
+  margin: 0 auto;
   width: 870px;
 }
 #NoticeEdit .input-title {

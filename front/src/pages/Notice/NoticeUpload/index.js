@@ -4,7 +4,7 @@ import Header from "layouts/Header";
 
 const NoticeUpload = () => {
   return (
-    <div id="NoticeUpload">
+    <div id="NoticeUpload" className="page-layout">
       <Header />
       <div className="back-ground">
         <div className="upload-form">

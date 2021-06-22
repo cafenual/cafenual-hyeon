@@ -2,16 +2,12 @@
   background-color: #fefefe;
 }
 #NoticeDetail .back-ground {
-  height: calc(100vh);
+  min-height: calc(85vh);
   width: 100%;
 }
 #NoticeDetail .detail-form {
-  left: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
-
+  margin: 0 auto;
   width: 850px;
-  margin-top: 510px;
   /*margin은 밖에서 밀고 padding은 안에서 민다(몸집이 불어나는 성격)*/
   /*200이었던 아이한테 padding 20을 주면 220이 된다*/
 }
@@ -42,10 +38,10 @@
   border-bottom: 1px solid #bdbdbd;
 }
 #NoticeDetail .detail-cont {
-  overflow-y: auto;
+  /*overflow-y: auto;*/
   /*안에 내용이 길어지면 스크롤바를 이용하여 내릴수 있게 함*/
   /*나는 전체적으로 드래그바가 생기게 하고 싶은데 어떻게 하는지 모르겠음;;;*/
-  height: 600px;
+  min-height: calc(55vh);
   width: 100%;
   word-break: normal;
   display: inline-block;
@@ -54,6 +50,7 @@
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 #NoticeDetail .bottom-left a {

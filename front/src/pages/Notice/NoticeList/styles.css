@@ -2,15 +2,12 @@
   background-color: #fefefe;
 }
 #NoticeList .back-ground {
-  height: calc(100vh); /*화면안에 정가운데에 옮기는 작업(장소)*/
+  height: calc(85vh); /*화면안에 정가운데에 옮기는 작업(장소)*/
   width: 100%;
 }
 #NoticeList .all-block {
-  left: 50%; /*화면안에 정가운데에 옮기는 작업(물건)*/
-  position: fixed;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
 
-  padding-top: 450px;
   width: 860px;
   overflow: hidden; /*문자열이 넘치면 문자열을 숨기고 대신...으로 표시*/
 }

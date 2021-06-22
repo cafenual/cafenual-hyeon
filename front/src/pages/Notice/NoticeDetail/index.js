@@ -4,7 +4,7 @@ import Header from "layouts/Header";
 
 const NoticeDetail = () => {
   return (
-    <div id="NoticeDetail">
+    <div id="NoticeDetail" className="page-layout">
       <Header />
       <div className="back-ground">
         <div className="detail-form">
