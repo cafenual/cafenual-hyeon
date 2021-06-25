@@ -9,7 +9,7 @@ body {
 #Join .join_form {
   left: 50%; /*화면안에 정가운데에 옮기는 작업(물건)*/
   position: fixed;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
 
   width: 455px;
@@ -25,7 +25,7 @@ button {
   background-color: #fdfdfd;
   height: 25px;
   width: 450px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   border: #fff;
   border-bottom: 2px solid #d8d8d8;
 }
@@ -46,7 +46,7 @@ button {
   float: right;
 }
 #Join .explain {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 11px;
 }
 #Join input[type="number"]::-webkit-outer-spin-button,  /*input옆에 있는 버튼 없애기*/

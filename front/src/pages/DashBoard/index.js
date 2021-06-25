@@ -12,7 +12,7 @@ const DashBoard = () => {
     alert("퇴근되었습니다");
   };
   return (
-    <div id="DashBoard">
+    <div id="DashBoard" className="page-layout">
       <Header />
       <StaffSide />
       <div className="all-block">

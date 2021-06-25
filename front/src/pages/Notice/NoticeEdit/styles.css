@@ -2,7 +2,8 @@
   background-color: #fefefe;
 }
 #NoticeEdit .back-ground {
-  height: calc(85vh);
+  padding-top: calc(6vh);
+  height: calc(90vh);
   width: 100%;
 }
 #NoticeEdit .upload-form {

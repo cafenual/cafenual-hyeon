@@ -1,5 +1,6 @@
 #NoticeList {
   background-color: #fefefe;
+  padding-top: 70px;
 }
 #NoticeList .back-ground {
   height: calc(85vh); /*화면안에 정가운데에 옮기는 작업(장소)*/

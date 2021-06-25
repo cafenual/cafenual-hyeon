@@ -1,5 +1,6 @@
 #NoticeDetail {
   background-color: #fefefe;
+  padding-top: 45px;
 }
 #NoticeDetail .back-ground {
   min-height: calc(85vh);
