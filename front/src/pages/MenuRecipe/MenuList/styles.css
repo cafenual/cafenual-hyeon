@@ -1,0 +1,9 @@
+#MenuView {
+  background-color: #fefefe;
+  height: calc(91vh);
+}
+
+#MenuView .all-block {
+  width: 940px;
+  margin: 0 auto;
+}
