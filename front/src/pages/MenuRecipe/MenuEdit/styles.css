@@ -1,0 +1,72 @@
+#MenuEdit {
+  background-color: #fefefe;
+  padding-top: 40px;
+  height: calc(91vh);
+}
+#MenuEdit .all-block {
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
+  height: calc(82vh);
+  width: calc(93%);
+  border: 1.5px solid #ddd;
+}
+#MenuEdit .top {
+  flex: 1;
+  border-bottom: 1.5px solid #ddd;
+  font-size: 35px;
+}
+#MenuEdit .input-title {
+  width: 100%;
+  font-size: 30px;
+  border: 0 none;
+  line-height: 1.5;
+  font-weight: bold;
+  background-color: #fefefe;
+}
+#MenuEdit .bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 12;
+}
+#MenuEdit .bottom-top {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  padding: 10px 20px 10px 20px; /*위 오른쪽 아래 왼쪽*/
+}
+#MenuEdit .img-link {
+  flex: 2;
+  float: right;
+}
+#MenuEdit .menu-kind {
+  flex: 1;
+  float: right;
+}
+#MenuEdit .bottom-middle {
+  flex: 6;
+  padding: 10px 10px 20px 20px;
+  overflow-y: scroll;
+}
+
+#MenuEdit .bottom-bottom {
+  flex: 6;
+  padding: 10px 20px 10px 20px;
+  overflow-y: scroll;
+}
+#MenuEdit .btn-area {
+  flex: 1;
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+}
+#MenuEdit .btn-area button {
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+  width: 100%;
+  margin: 0px;
+  border: none;
+  height: 100%;
+  font-size: 15px;
+}
