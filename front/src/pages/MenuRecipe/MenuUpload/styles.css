@@ -1,0 +1,72 @@
+#MenuUpload {
+  background-color: #fefefe;
+  padding-top: 40px;
+  height: calc(91vh);
+}
+#MenuUpload .all-block {
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
+  height: calc(82vh);
+  width: calc(93%);
+  border: 1.5px solid #ddd;
+}
+#MenuUpload .top {
+  flex: 1;
+  border-bottom: 1.5px solid #ddd;
+  font-size: 35px;
+}
+#MenuUpload .input-title {
+  width: 100%;
+  font-size: 30px;
+  border: 0 none;
+  line-height: 1.5;
+  font-weight: bold;
+  background-color: #fefefe;
+}
+#MenuUpload .bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 12;
+}
+#MenuUpload .bottom-top {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  padding: 10px 20px 10px 20px; /*위 오른쪽 아래 왼쪽*/
+}
+#MenuUpload .img-link {
+  flex: 2;
+  float: right;
+}
+#MenuUpload .menu-kind {
+  flex: 1;
+  float: right;
+}
+#MenuUpload .bottom-middle {
+  flex: 6;
+  padding: 10px 10px 20px 20px;
+  overflow-y: scroll;
+}
+
+#MenuUpload .bottom-bottom {
+  flex: 6;
+  padding: 10px 20px 10px 20px;
+  overflow-y: scroll;
+}
+#MenuUpload .btn-area {
+  flex: 1;
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+}
+#MenuUpload .btn-area button {
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+  width: 100%;
+  margin: 0px;
+  border: none;
+  height: 100%;
+  font-size: 15px;
+}
