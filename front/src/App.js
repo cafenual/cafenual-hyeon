@@ -8,6 +8,10 @@ import NoticeDetail from "pages/Notice/NoticeDetail";
 import NoticeEdit from "pages/Notice/NoticeEdit";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
+import MenuView from "pages/MenuRecipe/MenuList";
+import MenuDetail from "pages/MenuRecipe/MenuDetail";
+import MenuUpload from "pages/MenuRecipe/MenuUpload";
+import MenuEdit from "pages/MenuRecipe/MenuEdit";
 
 function App() {
   return (
@@ -22,8 +26,12 @@ function App() {
             <Route path="/join" component={Join} />
             <Route path="/notice" exact component={NoticeList} />
             <Route path="/notice/upload" exact component={NoticeUpload} />
-            <Route path="/notice/detail" exact component={NoticeDetail} />
             <Route path="/notice/edit" exact component={NoticeEdit} />
+            <Route path="/notice/detail" exact component={NoticeDetail} />
+            <Route path="/menu/detail" exact component={MenuDetail} />
+            <Route path="/menu/upload" exact component={MenuUpload} />
+            <Route path="/menu/edit" exact component={MenuEdit} />
+            <Route path="/menu/:categoryid?" exact component={MenuView} />  {/*categoryid는 변수이름*/}
           </Switch>
         </div>
       </BrowserRouter>
