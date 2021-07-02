@@ -15,7 +15,7 @@ const Header = () => {
     <div id="Header">
       <div className="header-menu">
         <div className="header-logo">
-          <a href="/staff">
+          <a href="/dashboard">
             <img src={cafe} />
             <span className="h1">cafenual</span>
           </a>
@@ -32,7 +32,7 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={"/menu/list"} exact activStyle={activeStyle}>
+                <NavLink to={"/menu"} exact activStyle={activeStyle}>
                   <BiFoodMenu />
                   <span>메뉴레시프</span>
                 </NavLink>
