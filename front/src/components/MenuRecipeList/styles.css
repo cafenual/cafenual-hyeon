@@ -1,0 +1,14 @@
+#MenuRecipeList {
+  height: calc(80vh);
+}
+#MenuRecipeList .all-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#MenuRecipeList .top-block {
+  flex: 15;
+}
+#MenuRecipeList .bottom-block {
+  flex: 1;
+}
