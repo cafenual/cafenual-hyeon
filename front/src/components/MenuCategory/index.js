@@ -1,37 +1,8 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
+import { categoryData } from "static/FakeDates";
 import "./styles.css";
 
-const categories = [
-  {
-    name: "all",
-    text: "전체보기",
-  },
-  {
-    name: "coffe",
-    text: "커피",
-  },
-  {
-    name: "juice",
-    text: "쥬스",
-  },
-  {
-    name: "tea",
-    text: "티",
-  },
-  {
-    name: "latte",
-    text: "라떼",
-  },
-  {
-    name: "Frappuccino",
-    text: "프라페",
-  },
-  {
-    name: "sandwich",
-    text: "샌드위치",
-  },
-];
+const categories = categoryData;
 
 const MenuCategory = () => {
   const activeStyle = {
@@ -41,22 +12,27 @@ const MenuCategory = () => {
 
   return (
     <div id="MenuCategory">
-      <ul className="list">
-        {categories.map((category, index) => (
-          <li className="list-left" key={index}>
-            <NavLink
-              activeStyle={activeStyle}
-              exact
-              to={category.name === "all" ? "/menu" : `/menu/${category.name}`}
-            >
-              {category.text}
-            </NavLink>
+      <div className="list-block">
+        <ul className="list">
+          {categories.map((category, index) => (
+            <li className="list-left" key={index}>
+              <NavLink
+                activeStyle={activeStyle}
+                exact
+                to={
+                  category.name === "all" ? "/menu" : `/menu/${category.name}`
+                }
+              >
+                {category.text}
+              </NavLink>
+            </li>
+          ))}
+          <li className="list-right">
+            <a href="/menu/list-edit">목록수정</a>
+            <a href="/menu/upload">등록</a>
           </li>
-        ))}
-        <li className="list-right">
-          <a href="/menu/upload">등록</a>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   );
 };

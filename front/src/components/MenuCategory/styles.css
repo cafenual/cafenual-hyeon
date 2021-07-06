@@ -1,7 +1,6 @@
 #MenuCategory {
-  padding-top: 30px;
+  padding-top: 10px;
 }
-
 #MenuCategory .list {
   overflow: hidden;
   width: 940px;
@@ -23,3 +22,4 @@
 #MenuCategory .list-right {
   float: right;
 }
+

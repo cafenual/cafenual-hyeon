@@ -1,54 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { withRouter } from "react-router-dom";
 import "./styles.css";
+import { AiOutlineSearch } from "react-icons/ai";
+import { RecipeData } from "static/FakeDates";
 
 const MenuRecipeList = ({ match }) => {
   const category = match.params.categoryid;
   console.log(category);
+
   const [fakeDatalist, setFakeDataList] = useState([]);
-  const fakeData = [
-    {
-      name: "아메라카노",
-      category: "coffe",
-      img: "이미지",
-    },
-    {
-      name: "오렌지 주스",
-      category: "juice",
-    },
-    {
-      name: "키위 주스",
-      category: "juice",
-    },
-    {
-      name: "카모마일",
-      category: "tea",
-    },
-    {
-      name: "프렌치얼그레이",
-      category: "tea",
-    },
-    {
-      name: "초콜릿라떼",
-      category: "latte",
-    },
-    {
-      name: "고구마라떼",
-      category: "latte",
-    },
-    {
-      name: "카라멜프라페",
-      category: "Frappuccino",
-    },
-    {
-      name: "바닐라쉐이크",
-      category: "Frappuccino",
-    },
-    {
-      name: "BELT 샌드위치",
-      category: "sandwich",
-    },
-  ];
+  const fakeData = RecipeData;
+
   useEffect(() => {
     if (!category) {
       setFakeDataList(fakeData);
@@ -65,18 +27,28 @@ const MenuRecipeList = ({ match }) => {
     <div id="MenuRecipeList">
       <div className="all-block">
         <div className="top-block">
-          <ul>
+          <ul className="list">
             {fakeDatalist.map((data, index) => (
               <li key={index}>
-                <div>
-                  <img src={data.img}></img>
+                <div className="image-box">
+                  <img src={data.img} />
                 </div>
-                <div>{data.name}</div>
+                <div className="name-box">
+                  <a href={`/menu/detail/${data.name}`}>{data.name}</a>
+                </div>
               </li>
             ))}
           </ul>
         </div>
-        <div className="bottom-block">페이지 숫자</div>
+        <div className="bottom-block">
+          <div>페이지 숫자</div>
+          <div className="search-block">
+            <button type="submit" className="search-btn">
+              <AiOutlineSearch size="23" />
+            </button>
+            <input type="text" className="search-input" />
+          </div>
+        </div>
       </div>
     </div>
   );

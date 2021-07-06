@@ -1,14 +1,60 @@
 #MenuRecipeList {
-  height: calc(80vh);
 }
 #MenuRecipeList .all-block {
-  height: 100%;
-  display: flex;
   flex-direction: column;
+  width: 100%;
+}
+#MenuRecipeList .list {
+  overflow: hidden;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: calc(2vh);
+  height: calc(78vh);
 }
 #MenuRecipeList .top-block {
-  flex: 15;
+  flex: 10;
+}
+#MenuRecipeList li {
+  float: left;
+  width: 250px;
+  height: 320px;
+  margin: 20px;
+}
+#MenuRecipeList img {
+  width: 250px;
+  height: 300px;
 }
 #MenuRecipeList .bottom-block {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+}
+#MenuRecipeList .image-box {
+  width: 250px;
+  height: 300px;
+  float: block;
+  display: flex;
+}
+#MenuRecipeList .name-box {
+  float: left;
+}
+
+#MenuRecipeList input {
+  width: 500px;
+  height: 42px;
+  border: 0 none;
+  box-sizing: border-box;
+  background-color: #fefefe;
+  border-bottom: 1px solid #bdbdbd;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+#MenuRecipeList button {
+  width: 34px;
+  height: 42px;
+  background-color: #fefefe;
+  border-bottom: 1px solid #bdbdbd;
+  margin-bottom: 0px;
+  float: right;
 }

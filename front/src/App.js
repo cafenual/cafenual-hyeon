@@ -27,11 +27,16 @@ function App() {
             <Route path="/notice" exact component={NoticeList} />
             <Route path="/notice/upload" exact component={NoticeUpload} />
             <Route path="/notice/edit" exact component={NoticeEdit} />
-            <Route path="/notice/detail" exact component={NoticeDetail} />
-            <Route path="/menu/detail" exact component={MenuDetail} />
+            <Route path="/notice/:detaiid?" exact component={NoticeDetail} />
+            <Route
+              path="/menu/detail/:recipeName?"
+              exact
+              component={MenuDetail}
+            />
             <Route path="/menu/upload" exact component={MenuUpload} />
             <Route path="/menu/edit" exact component={MenuEdit} />
-            <Route path="/menu/:categoryid?" exact component={MenuView} />  {/*categoryid는 변수이름*/}
+            <Route path="/menu/:categoryid?" exact component={MenuView} />{" "}
+            {/*categoryid는 변수이름*/}
           </Switch>
         </div>
       </BrowserRouter>

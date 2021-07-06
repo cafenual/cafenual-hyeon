@@ -1,33 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Header from "layouts/Header";
-import "./styles.css";
+import "./styles.css"; /*전부가 아닌 부분으로 가져오기때문에 {}사용한다*/
+import { menuData } from "static/FakeDates";
 
 const MenuUpload = () => {
   const [fakeDatalist, setFakeDataList] = useState([]);
+  const [titleName, settitleName] = useState("");
+  const fakeData = menuData;
 
-  const fakeData = [
-    {
-      category: "coffe",
-    },
-    {
-      category: "juice",
-    },
-    {
-      category: "tea",
-    },
-    {
-      category: "latte",
-    },
-    {
-      category: "Frappuccino",
-    },
-    {
-      category: "sandwich",
-    },
-  ];
   useEffect(() => {
     setFakeDataList(fakeData);
   }, []);
+
+  const onChange = (e) => {
+    console.log(e.target.value);
+    settitleName(e.target.value);
+  };
+
   return (
     <div id="MenuUpload" className="page-layout">
       <Header />
@@ -43,15 +32,21 @@ const MenuUpload = () => {
           <div className="bottom-top">
             <div className="img">
               <input
+                className="upload-name"
+                value={titleName}
+                placeholder="파일 선택"
+              />
+              <label for="img-link">Browse</label>
+              <input
                 type="file"
-                className="img-link"
-                accept="image/png, image/jpg"
+                id="img-link"
+                accept="image/*"
+                onChange={onChange}
               />
             </div>
-            <div clasName="menu-kind">
-              메뉴 종류(드롭다운리스트)
+            <div className="menu-kind">
               <select>
-                <option> </option>
+                <option>종류 선택 </option>
                 {fakeDatalist.map(
                   (
                     data, //data는 변수 순회하는 아이
