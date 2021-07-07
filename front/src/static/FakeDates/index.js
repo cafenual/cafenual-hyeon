@@ -62,7 +62,7 @@ export const RecipeData = [
     name: "아메리카노",
     category: "coffe",
     img: americano,
-    recipe: "에스프레스 2샷\n 물 390ml",
+    recipe: "에스프레스 2샷 \n 물 390ml",
     content:
       "1.원두가루를 25g을 맞춘다.\n 2.가루를 간 후 템퍼를 이용해 템핑 한다.\n 3.에스프레소 기계로 고온 고압으로 추출한다.\n 4.정량에 물에 에스프로소 샷을 넣는다",
   },
