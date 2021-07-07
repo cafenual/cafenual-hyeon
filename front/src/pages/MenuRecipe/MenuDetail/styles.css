@@ -1,43 +1,57 @@
 #MenuDetail {
-  padding-top: 40px;
+  padding-top: calc(
+    1vh
+  ); /*!물어보기 드래그바가 있으면서 24인치와 32인치가 자동적으로 될수는 없는지!*/
 }
 #MenuDetail .all-block {
   flex-direction: column;
-  display: flex;
   margin: 0 auto;
-  height: calc(82vh);
-  width: calc(93%);
+  width: calc(94%);
   border: 1.5px solid #ddd;
+  margin-bottom: calc(3vh);
 }
 #MenuDetail .top {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1.5px solid #ddd;
-  font-size: 30px;
+  padding: 10px;
+}
+#MenuDetail .menu-title {
+  font-size: 35px;
+}
+#MenuDetail .HotnIce button {
+  margin: 0px 10px 0px 0px;
+  width: 100px;
+  height: 50px;
+  background-color: #2e2e2e;
+  color: white;
+  border: none;
 }
 #MenuDetail .bottom {
+  height: calc(75vh);
   display: flex;
-  flex: 13;
 }
 #MenuDetail .left-block {
   flex-direction: column;
-  display: flex;
-  flex: 1;
+  flex: 2;
+  min-height: 500px;
   border-right: 1.5px solid #ddd;
 }
 #MenuDetail .left-top {
-  flex: 1.5;
+  height: calc(75vh - 250px);
   border-bottom: 1.5px solid #ddd;
+  overflow: hidden; /*안하면 사진이 지정된 크기에서 벗어나게 됨*/
 }
 #MenuDetail .left-bottom {
   padding: 30px;
-  flex: 1;
+  height: 250px;
   word-break: normal;
-  font-size: 17px;
+  font-size: 18px;
 }
 #MenuDetail .right-block {
   flex-direction: column;
   display: flex;
-  flex: 1;
+  flex: 3;
 }
 #MenuDetail .right-top {
   padding-right: 15px;
@@ -49,10 +63,10 @@
   font-size: 18px;
 }
 #MenuDetail .right-middle {
-  flex: 15;
+  flex: 10;
   padding: 20px;
   word-break: normal;
-  font-size: 17px;
+  font-size: 18px;
 }
 #MenuDetail .right-bottom {
   flex: 1;
@@ -65,7 +79,7 @@
   margin: 10px;
   font-size: 18px;
 }
-#MenuDetail img {
+#MenuDetail .left-top img {
   width: 100%;
   height: 100%;
 }
