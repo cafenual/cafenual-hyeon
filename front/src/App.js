@@ -12,7 +12,7 @@ import MenuView from "pages/MenuRecipe/MenuList";
 import MenuDetail from "pages/MenuRecipe/MenuDetail";
 import MenuUpload from "pages/MenuRecipe/MenuUpload";
 import MenuEdit from "pages/MenuRecipe/MenuEdit";
-
+import MenuCategoryEdit from "pages/MenuRecipe/MenuCategoryEdit";
 function App() {
   return (
     <div id="container">
@@ -35,6 +35,11 @@ function App() {
             />
             <Route path="/menu/upload" exact component={MenuUpload} />
             <Route path="/menu/edit" exact component={MenuEdit} />
+            <Route
+              path="/menu/categoryedit"
+              exact
+              component={MenuCategoryEdit}
+            />
             <Route path="/menu/:categoryid?" exact component={MenuView} />{" "}
             {/*categoryid는 변수이름*/}
           </Switch>

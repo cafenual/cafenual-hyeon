@@ -28,7 +28,7 @@ const MenuCategory = () => {
             </li>
           ))}
           <li className="list-right">
-            <a href="/menu/list-edit">목록수정</a>
+            <a href="/menu/categoryedit">목록수정</a>
             <a href="/menu/upload">등록</a>
           </li>
         </ul>

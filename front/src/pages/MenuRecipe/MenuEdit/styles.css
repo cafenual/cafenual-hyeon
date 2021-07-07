@@ -5,7 +5,7 @@
   flex-direction: column;
   display: flex;
   margin: 0 auto;
-  height: calc(82vh);
+  height: calc(85vh);
   width: calc(93%);
   border: 1.5px solid #ddd;
 }
