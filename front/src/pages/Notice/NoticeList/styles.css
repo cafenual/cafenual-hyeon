@@ -7,7 +7,6 @@
 }
 #NoticeList .all-block {
   margin: 0 auto;
-
   width: 860px;
   overflow: hidden; /*문자열이 넘치면 문자열을 숨기고 대신...으로 표시*/
 }
