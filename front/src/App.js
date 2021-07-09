@@ -27,7 +27,7 @@ function App() {
             <Route path="/notice" exact component={NoticeList} />
             <Route path="/notice/upload" exact component={NoticeUpload} />
             <Route path="/notice/edit" exact component={NoticeEdit} />
-            <Route path="/notice/:detaiid?" exact component={NoticeDetail} />
+            <Route path="/notice/detail/:noticeid?" exact component={NoticeDetail} />
             <Route
               path="/menu/detail/:recipeName?"
               exact
