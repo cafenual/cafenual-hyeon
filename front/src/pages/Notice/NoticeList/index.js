@@ -2,55 +2,11 @@ import React, { useEffect, useState } from "react";
 import Header from "layouts/Header";
 import "./styles.css";
 import { AiOutlineSearch } from "react-icons/ai";
+import { NoticeData } from "static/FakeDates";
 
 const NoticeList = () => {
   const [FakeNoticeData, setFakeNoticeData] = useState([]);
-  const FakeNotice = [
-    {
-      title: "아메리카노 모닝할인건",
-      content:
-        "12시전까지 4100원에 팔았던 아메리카노는3500원으로 할인한 가격으로 판매",
-      date: "2021-07-05",
-      id: 1,
-    },
-    {
-      title: "스페셜티 시즌종료",
-      content:
-        "이번에 시즌으로 나온 스페셜티는 재고 부족으로 7월 말까지가 아닌 7월 10일까지 판매후 시즌종료됩니다",
-      date: "2021-07-01",
-      id: 2,
-    },
-    {
-      title: "3번입니당",
-      content: "내가 잘 하고 있는지 모르겄네 ㅎㅎ",
-      date: "2021-06-30",
-      id: 3,
-    },
-    {
-      title: "4번입니당",
-      content: "내가 잘 하고 있는지 모르겄네 ㅎㅎ",
-      date: "2021-5-25",
-      id: 4,
-    },
-    {
-      title: "5번입니당",
-      content: "내가 잘 하고 있는지 모르겄네 ㅎㅎ",
-      date: "2021-06-29",
-      id: 5,
-    },
-    {
-      title: "6번입니당",
-      content: "내가 잘 하고 있는지 모르겄네 ㅎㅎ",
-      date: "2021-07-03",
-      id: 6,
-    },
-    {
-      title: "7번입니당",
-      content: "내가 잘 하고 있는지 모르겄네 ㅎㅎ",
-      date: "2021-05-18",
-      id: 7,
-    },
-  ];
+  const FakeNotice = NoticeData;
   useEffect(() => {
     setFakeNoticeData(FakeNotice);
   }, []);
@@ -102,7 +58,10 @@ const NoticeList = () => {
                     <td className="td-left">
                       <div className="inner-cont">
                         <span className="inner-text">
-                          <a href={`/notice/${data.id}`} className="link-text">
+                          <a
+                            href={`/notice/detail/${data.id}`}
+                            className="link-text"
+                          >
                             {data.title}
                           </a>
                         </span>
