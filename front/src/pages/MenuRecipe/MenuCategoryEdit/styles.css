@@ -34,22 +34,6 @@
   margin: 0;
   border-bottom: 2px solid #bdbdbd;
 }
-
-#MenuCategoryEdit .plus-btn {
-  height: 42px;
-  width: 80px;
-  border: none;
-  margin: 0px;
-  background-color: #424242;
-  color: white;
-  text-align: center;
-  border-radius: 10px;
-  font-size: 25px;
-}
-
-#MenuCategoryEdit .plus-btn svg {
-  color: white;
-}
 #MenuCategoryEdit .bottom-block {
   border-top: 2px solid #a4a4a4;
 }
@@ -66,6 +50,16 @@
 }
 #MenuCategoryEdit colgroup .right {
   width: 40%;
+}
+#MenuCategoryEdit .plus-input {
+  height: 42px;
+  border: 0 none;
+  box-sizing: border-box;
+  background-color: #fefefe;
+  border-bottom: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
 }
 #MenuCategoryEdit .btn-zone button {
   width: 50px;

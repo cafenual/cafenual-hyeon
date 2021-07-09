@@ -22,16 +22,13 @@ const MenuCategoryEdit = () => {
           <fieldset>
             <input
               type="text"
-              className="search-input"
+              className="search-input" /* 안깨지고 가운데로 정렬하자 */
               placeholder="검색어를 입력해주세요"
             />
             <button className="search-btn">
               <AiOutlineSearch size="23" />
             </button>
           </fieldset>
-          <button className="plus-btn">
-            <BiCalendarPlus />
-          </button>
         </div>
         <div className="bottom-block">
           <table className="table">
@@ -45,6 +42,24 @@ const MenuCategoryEdit = () => {
                 <th scope="col">수정 / 삭제</th>
               </tr>
             </thead>
+            <tr>
+              <td className="td-left">
+                <div className="inner-cont">
+                  <span className="inner-text">
+                    <input
+                      type="text"
+                      className="plus-input"
+                      placeholder="category add"
+                    />
+                  </span>
+                </div>
+              </td>
+              <td className="btn-zone">
+                <button>
+                  <BiCalendarPlus />
+                </button>
+              </td>
+            </tr>
             <tbody>
               {FakeCategoryData.map((data, index) => (
                 <tr key={index}>
