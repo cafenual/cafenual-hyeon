@@ -32,20 +32,20 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={"/menu"} exact activStyle={activeStyle}>
+                <NavLink to={"/menu"} activStyle={activeStyle}>
                   <BiFoodMenu />
                   <span>메뉴레시프</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to={"/notice"} exact activStyle={activeStyle}>
+                <NavLink to={"/notice"} activStyle={activeStyle}>
                   <BiBell />
                   <span>공지사항</span>{" "}
                   {/*exact가 붙으면 notice만 활성화되게, 안붙으면 23이 붙어도 활성화가 됨*/}
                 </NavLink>
               </li>
               <li>
-                <NavLink to={"/dsad"} exact activeStyle={activeStyle}>
+                <NavLink to={"/handover"} activeStyle={activeStyle}>
                   <BiCalendarEdit />
                   <span>인수인계</span>
                 </NavLink>
