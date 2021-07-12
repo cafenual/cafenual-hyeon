@@ -13,6 +13,7 @@ import MenuDetail from "pages/MenuRecipe/MenuDetail";
 import MenuUpload from "pages/MenuRecipe/MenuUpload";
 import MenuEdit from "pages/MenuRecipe/MenuEdit";
 import MenuCategoryEdit from "pages/MenuRecipe/MenuCategoryEdit";
+import HandOver from "pages/HandOver";
 function App() {
   return (
     <div id="container">
@@ -27,7 +28,11 @@ function App() {
             <Route path="/notice" exact component={NoticeList} />
             <Route path="/notice/upload" exact component={NoticeUpload} />
             <Route path="/notice/edit" exact component={NoticeEdit} />
-            <Route path="/notice/detail/:noticeid?" exact component={NoticeDetail} />
+            <Route
+              path="/notice/detail/:noticeid?"
+              exact
+              component={NoticeDetail}
+            />
             <Route
               path="/menu/detail/:recipeName?"
               exact
@@ -42,6 +47,7 @@ function App() {
             />
             <Route path="/menu/:categoryid?" exact component={MenuView} />{" "}
             {/*categoryid는 변수이름*/}
+            <Route path="/handover/:id?" exact component={HandOver} />
           </Switch>
         </div>
       </BrowserRouter>
