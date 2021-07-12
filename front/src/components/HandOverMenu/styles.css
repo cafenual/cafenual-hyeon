@@ -1,0 +1,24 @@
+#HandOverMenu {
+  padding-top: 10px;
+}
+#HandOverMenu .list {
+  overflow: hidden;
+  width: 940px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0 15px;
+}
+#HandOverMenu .list {
+  justify-content: space-between;
+}
+#HandOverMenu .list-left {
+  float: left;
+}
+#HandOverMenu .list li a {
+  padding: 0 13px 7px 12px;
+  letter-spacing: -0.3px;
+  line-height: 20px;
+  font-size: 16px;
+}
+#HandOverMenu .list-right {
+  float: right;
+}
