@@ -13,7 +13,10 @@ import MenuDetail from "pages/MenuRecipe/MenuDetail";
 import MenuUpload from "pages/MenuRecipe/MenuUpload";
 import MenuEdit from "pages/MenuRecipe/MenuEdit";
 import MenuCategoryEdit from "pages/MenuRecipe/MenuCategoryEdit";
-import HandOver from "pages/HandOver";
+import HandOverUpload from "pages/HandOver/HandOverUpload";
+import HandOverList from "pages/HandOver/HandOverList";
+import HandOverDetail from "pages/HandOver/HandOverDetail";
+import HandOverEdit from "pages/HandOver/HandOverEdit";
 function App() {
   return (
     <div id="container">
@@ -47,7 +50,18 @@ function App() {
             />
             <Route path="/menu/:categoryid?" exact component={MenuView} />{" "}
             {/*categoryid는 변수이름*/}
-            <Route path="/handover/:id?" exact component={HandOver} />
+            <Route path="/handover/upload" exact component={HandOverUpload} />
+            <Route path="/handover/:typeid?" exact component={HandOverList} />
+            <Route
+              path="/handover/detail/:HandOverid?"
+              exact
+              component={HandOverDetail}
+            />
+            <Route
+              path="/handover/edit/:HandOverid?"
+              exact
+              component={HandOverEdit}
+            />
           </Switch>
         </div>
       </BrowserRouter>
