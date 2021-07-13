@@ -1,0 +1,76 @@
+#HandOver {
+  padding-top: 50px;
+}
+#HandOver .all-block {
+  margin: 0 auto;
+  width: 860px;
+}
+#HandOver fieldset {
+  border: 0 none;
+  padding: 0;
+  height: 42px;
+}
+#HandOver .middle-block {
+  overflow: hidden;
+  word-break: normal;
+  margin-top: 20px;
+  border-top: 2px solid #a4a4a4;
+}
+#HandOver .table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+#HandOver colgroup .left {
+  width: 80%;
+}
+#HandOver colgroup .right {
+  width: 20%;
+}
+#HandOver th {
+  padding: 15px 20px;
+  color: #1e1e1e;
+  border-left: 0 none;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: normal;
+  font-size: 14px;
+}
+#HandOver td {
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+#HandOver .td-left {
+  text-align: left;
+  border-left: 0 none;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+  line-height: 26px; /*줄 높이를 정하는 속성*/
+  color: #666;
+}
+#HandOver .inner-cont {
+  padding: 15px 60px 14px 20px;
+}
+#HandOver .inner-text {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  padding-right: 17px;
+  vertical-align: top;
+  /*inline, inline-block 요소에만 적용, 요소자체만 정렬 내용에는 영향을 미치지 않음*/
+  /*top 부모요소의 맨 위*/
+}
+#HandOver .link-text {
+  color: #1e1e1e;
+  line-height: 24px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis; /*영역을 벗어나는 텍스트는 자르고 나서, 잘린 부분에 생략기호(...)을 표시*/
+  white-space: nowrap;
+  /*스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성*/
+  /*nowrap 스페이스와 탭은 병합, 줄바꿈 병합, 자동 줄바꿈 x (병합은 1개의 공백으로 바꾸는 것)*/
+  word-break: break-all; /*글자 기분으로 줄바꿈*/
+}
