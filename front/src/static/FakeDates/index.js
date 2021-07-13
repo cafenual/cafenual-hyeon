@@ -5,6 +5,86 @@ import choc from "static/img/chocolatelatte.jpg";
 import vshake from "static/img/vshake.jpg";
 import belt from "static/img/belt.jpg";
 
+export const HandOverListData = [
+  {
+    name: "day",
+    text: "당일",
+  },
+  {
+    name: "open",
+    text: "오픈",
+  },
+  {
+    name: "close",
+    text: "마감",
+  },
+];
+export const HandOverData = [
+  {
+    title: "청포도베이스가 없어요",
+    content:
+      "<p>청포도베이스가 없어서 청포도베이스가 들어올때까지 청포도에이드는 판매 불가입니다</p>",
+    date: "2021-07-5",
+    type: "day",
+    id: "1",
+  },
+  {
+    title: "에어콘이 틀어져있어요",
+    content:
+      "<p>간혹가도 오픈중 확인해보니 에어콘이 켜져있는것이 확인되었습니다</p><p>마감분들은 나가시기 전에 한번더 확인 부탁드리겠습니다</p>",
+    date: "2021-07-8",
+    type: "close",
+    id: "2",
+  },
+  {
+    title: "오렌지 베이스를 많이 만들어주세요",
+    content:
+      "<p>여름이다 보니 마감때 오렌지 베이스가 많이 나갑니다</p><p>만들어진것 이상 나가다 보니 막바지에는 베이스가 없어서 나갈수 없어 한통 정도 더 여비로 만들어주세요</p>",
+    date: "2021-07-5",
+    type: "open",
+    id: "3",
+  },
+  {
+    title: "삼성페이 결제 오류",
+    content:
+      "<p>당일 포스기 오류로 인해 삼성페이가 결제가 안됩니다</p><p>수리기사님은 내일 방문예정으로 당일은 손님께 양해 부탁드리고 삼성페이로 결제 안된다고 미리 공지해주세요</p>",
+    date: "2021-06-30",
+    type: "day",
+    id: "4",
+  },
+  {
+    title: "청포도베이스가 없어요",
+    content:
+      "<p>청포도베이스가 없어서 청포도베이스가 들어올때까지 청포도에이드는 판매 불가입니다</p>",
+    date: "2021-07-5",
+    type: "day",
+    id: "5",
+  },
+  {
+    title: "에어콘이 틀어져있어요",
+    content:
+      "<p>간혹가도 오픈중 확인해보니 에어콘이 켜져있는것이 확인되었습니다</p><p>마감분들은 나가시기 전에 한번더 확인 부탁드리겠습니다</p>",
+    date: "2021-07-8",
+    type: "close",
+    id: "6",
+  },
+  {
+    title: "오렌지 베이스를 많이 만들어주세요",
+    content:
+      "<p>여름이다 보니 마감때 오렌지 베이스가 많이 나갑니다</p><p>만들어진것 이상 나가다 보니 막바지에는 베이스가 없어서 나갈수 없어 한통 정도 더 여비로 만들어주세요</p>",
+    date: "2021-07-5",
+    type: "open",
+    id: "7",
+  },
+  {
+    title: "삼성페이 결제 오류",
+    content:
+      "<p>당일 포스기 오류로 인해 삼성페이가 결제가 안됩니다</p><p>수리기사님은 내일 방문예정으로 당일은 손님께 양해 부탁드리고 삼성페이로 결제 안된다고 미리 공지해주세요</p>",
+    date: "2021-06-30",
+    type: "day",
+    id: "8",
+  },
+];
 export const menuData = [
   {
     category: "coffe",
@@ -25,7 +105,6 @@ export const menuData = [
     category: "sandwich",
   },
 ];
-
 export const categoryData = [
   {
     name: "all",
@@ -56,7 +135,6 @@ export const categoryData = [
     text: "샌드위치",
   },
 ];
-
 export const RecipeData = [
   {
     name: "아메리카노",
