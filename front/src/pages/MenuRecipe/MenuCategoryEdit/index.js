@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import Header from "layouts/Header";
 import "./styles.css";
 import { menuData } from "static/FakeDates";
-import { AiOutlineSearch } from "react-icons/ai";
-import { BiCalendarEdit } from "react-icons/bi";
-import { BiCalendarPlus } from "react-icons/bi";
-import { BiCalendarMinus } from "react-icons/bi";
+import { AiFillFileAdd } from "react-icons/ai";
+import { AiFillCaretUp } from "react-icons/ai";
+import { AiFillCaretDown } from "react-icons/ai";
+import { BiTrash } from "react-icons/bi";
 
 const MenuCategoryEdit = () => {
   const [FakeCategoryData, setFakeCategoryData] = useState([]);
@@ -19,47 +19,49 @@ const MenuCategoryEdit = () => {
       <Header />
       <div className="all-block">
         <div className="top-block">
-          <fieldset>
-            <input
-              type="text"
-              className="search-input" /* 안깨지고 가운데로 정렬하자 */
-              placeholder="검색어를 입력해주세요"
-            />
-            <button className="search-btn">
-              <AiOutlineSearch size="23" />
-            </button>
-          </fieldset>
-        </div>
-        <div className="bottom-block">
           <table className="table">
             <colgroup>
-              <col className="left" />
-              <col className="right" />
+              <col className="new-menu" />
+              <col className="add" />
             </colgroup>
             <thead>
               <tr>
-                <th scope="col">카테고리 이름</th>
-                <th scope="col">수정 / 삭제</th>
+                <th scope="col">목록이름</th>
+                <th scope="col">추가</th>
               </tr>
             </thead>
-            <tr>
-              <td className="td-left">
-                <div className="inner-cont">
-                  <span className="inner-text">
-                    <input
-                      type="text"
-                      className="plus-input"
-                      placeholder="category add"
-                    />
-                  </span>
-                </div>
-              </td>
-              <td className="btn-zone">
-                <button>
-                  <BiCalendarPlus />
-                </button>
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    className="add-input"
+                    placeholder="추가할 목록이름을 적어주세요"
+                  />
+                </td>
+                <td>
+                  <button>
+                    <AiFillFileAdd />
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="middle-block">
+          <table className="table">
+            <colgroup>
+              <col className="menu-edit" />
+              <col className="location-change" />
+              <col className="delete" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">목록 수정</th>
+                <th scope="col">위치변경</th>
+                <th scope="col">삭제</th>
+              </tr>
+            </thead>
             <tbody>
               {FakeCategoryData.map((data, index) => (
                 <tr key={index}>
@@ -68,18 +70,26 @@ const MenuCategoryEdit = () => {
                       <span className="inner-text">{data.category}</span>
                     </div>
                   </td>
-                  <td className="btn-zone">
+                  <td className="up-down">
                     <button>
-                      <BiCalendarEdit />
+                      <AiFillCaretUp />
                     </button>
                     <button>
-                      <BiCalendarMinus />
+                      <AiFillCaretDown />
+                    </button>
+                  </td>
+                  <td className="delete-btn">
+                    <button>
+                      <BiTrash />
                     </button>
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
+        </div>
+        <div className="bottom-block">
+          <button>적용하기</button>
         </div>
       </div>
     </div>
