@@ -28,9 +28,9 @@ function App() {
             {/* exact를 안치면 정확하게가 아니어서 다른 페이지에 /가 붙어 있으므로 다른 페이지로 이동이 안됨 */}
             <Route path="/commute" component={Commute} />
             <Route path="/join" component={Join} />
-            <Route path="/notice" exact component={NoticeList} />
             <Route path="/notice/upload" exact component={NoticeUpload} />
             <Route path="/notice/edit" exact component={NoticeEdit} />
+            <Route path="/notice/:typeid?" exact component={NoticeList} />
             <Route
               path="/notice/detail/:noticeid?"
               exact

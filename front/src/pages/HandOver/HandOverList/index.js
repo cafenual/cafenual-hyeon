@@ -22,6 +22,7 @@ const HandOverList = ({ match }) => {
       );
     }
   }, [type]); //type이 들어가는것은 어떤 의미를 갖는 것일까?
+  console.log(FakeHandOverData);
 
   return (
     <div id="HandOver" className="page-layout">
