@@ -1,0 +1,23 @@
+#NoticeMenu {
+  padding-top: 10px;
+}
+#NoticeMenu .list {
+  overflow: hidden;
+  width: 860px;
+  padding: 10px 0 15px;
+}
+#NoticeMenu .list {
+  justify-content: space-between;
+}
+#NoticeMenu .list-left {
+  float: left;
+}
+#NoticeMenu .list li a {
+  padding: 0 13px 7px 12px;
+  letter-spacing: -0.3px;
+  line-height: 20px;
+  font-size: 16px;
+}
+#NoticeMenu .list-right {
+  float: right;
+}
