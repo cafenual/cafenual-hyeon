@@ -3,13 +3,22 @@ import Header from "layouts/Header";
 import "./styles.css";
 import { AiOutlineSearch } from "react-icons/ai";
 import { NoticeData } from "static/FakeDates";
+import { withRouter } from "react-router-dom";
+import NoticeMenu from "components/NoticeMenu";
 
-const NoticeList = () => {
+const NoticeList = ({ match }) => {
+  const type = match.params.typeid;
+
   const [FakeNoticeData, setFakeNoticeData] = useState([]);
   const FakeNotice = NoticeData;
+
   useEffect(() => {
-    setFakeNoticeData(FakeNotice);
-  }, []);
+    if (!type) {
+      setFakeNoticeData(FakeNotice.filter((data) => data.type === "notice"));
+    } else {
+      setFakeNoticeData(FakeNotice.filter((data) => data.type === type));
+    }
+  }, [type]);
 
   return (
     <div id="NoticeList" className="page-layout">
@@ -17,24 +26,7 @@ const NoticeList = () => {
       <div className="back-ground">
         <div className="all-block">
           <div className="noticelist-top">
-            <div className="list-search">
-              <form action="">
-                <fieldset>
-                  {/*fieldset은 그룹화 시킬때 사용*/}
-                  <input
-                    type="text"
-                    className="search-input"
-                    placeholder="검색어를 입력해주세요"
-                  />
-                  <button type="submit" className="search-btn">
-                    <AiOutlineSearch size="23" />
-                  </button>
-                </fieldset>
-              </form>
-            </div>
-            <div className="list-write">
-              <a href="/notice/upload">작성</a>
-            </div>
+            <NoticeMenu />
           </div>
 
           <div className="noticelist-middle">
@@ -76,11 +68,26 @@ const NoticeList = () => {
             </table>
           </div>
 
-          <div className="noticelist-bottom">{/*페이지 넘기기*/}</div>
+          <div className="noticelist-bottom">
+            <div className="number-page">페이지 숫자</div>
+            <div className="list-search">
+              <fieldset>
+                {/*fieldset은 그룹화 시킬때 사용*/}
+                <input
+                  type="text"
+                  className="search-input"
+                  placeholder="검색어를 입력해주세요"
+                />
+                <button type="submit" className="search-btn">
+                  <AiOutlineSearch size="23" />
+                </button>
+              </fieldset>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default NoticeList;
+export default withRouter(NoticeList);

@@ -1,53 +1,41 @@
 #NoticeList {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 #NoticeList .all-block {
   margin: 0 auto;
   width: 860px;
   overflow: hidden; /*문자열이 넘치면 문자열을 숨기고 대신...으로 표시*/
 }
-#NoticeList .noticelist-top {
-  width: 860px;
-  display: flex;
-  justify-content: space-between;
-}
 #NoticeList fieldset {
   border: 0 none;
   padding: 0;
-  height: 42px;
 }
 #NoticeList .search-input {
-  float: left; /*애로 왼쪽 정렬*/
-  width: 500px;
+  width: 450px;
   height: 42px;
   border: 0 none;
   box-sizing: border-box;
   background-color: #fefefe;
   border-bottom: 2px solid #a4a4a4;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+#NoticeList svg {
+  color: rgb(127, 127, 127);
 }
 #NoticeList .search-btn {
   width: 34px;
   height: 42px;
-  background-color: #fefefe;
   border-bottom: 2px solid #a4a4a4;
-}
-#NoticeList .list-write a {
-  color: #fafafa;
-  float: left;
-  width: 80px;
-  height: 45px;
-  font-size: 17px;
-  line-height: 40px; /*작성이라는 글자가 가운데 올수 있게 위쪽에 여백을 줌*/
-  background-color: #424242;
-  text-align: center; /*가운데 정렬*/
-  /*text-decoration: none; 문자 장식을 지정 선없음*/
-  border-radius: 8px;
 }
 #NoticeList .noticelist-middle {
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 50px;
   border-top: 2px solid #848484;
   word-break: normal;
+  height: calc(62vh);
   /*줄바꿈을 할 때 단어 기준으로 할 지 글자 기준으로 할지 정하는 속성 */
   /*normal : CJK 문자는 글자 기준으로, CJK 이외의 문자는 단어 기준으로 줄바꿈합니다.*/
 }
@@ -60,10 +48,10 @@
   table-layout: fixed; /*표 크기 고정 ex)만약 넓이의 수치가 정해져있다면 글의 자동 줄바꿈되어 크기 유지*/
 }
 #NoticeList colgroup .left {
-  width: 81%;
+  width: 80%;
 }
 #NoticeList colgroup .right {
-  width: 19%;
+  width: 20%;
 }
 #NoticeList th {
   padding: 15px 20px;
@@ -110,4 +98,8 @@
   /*스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성*/
   /*nowrap 스페이스와 탭은 병합, 줄바꿈 병합, 자동 줄바꿈 x (병합은 1개의 공백으로 바꾸는 것)*/
   word-break: break-all; /*글자 기분으로 줄바꿈*/
+}
+#NoticeList .noticelist-bottom {
+  justify-content: space-between;
+  display: flex;
 }
