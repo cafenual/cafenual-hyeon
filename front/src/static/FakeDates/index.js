@@ -246,21 +246,27 @@ export const HandOverData = [
 export const menuData = [
   {
     category: "coffe",
+    text: "커피",
   },
   {
     category: "juice",
+    text: "쥬스",
   },
   {
     category: "tea",
+    text: "티",
   },
   {
     category: "latte",
+    text: "라떼",
   },
   {
     category: "Frappuccino",
+    text: "프라페",
   },
   {
     category: "sandwich",
+    text: "샌드위치",
   },
 ];
 export const categoryData = [
@@ -296,15 +302,15 @@ export const categoryData = [
 export const RecipeData = [
   {
     name: "아메리카노",
-    category: "coffe",
+    category: "커피",
     img: americano,
     recipe: "<p>에스프레스 2샷</p><p><br/></p><p>물 390ml</p>",
     content:
-      "<p>1.원두가루를 25g을 맞춘다</p><p><br/></p><p>2.가루를 간 후 템퍼를 이용해 템핑 한다</p><p><br/></p><p>3.에스프레소 기계로 고온 고압으로 추출한다</p<p><br/></p>><p>4.정량에 물에 에스프로소 샷을 넣는다</p>",
+      "<p>1.원두가루를 25g을 맞춘다</p><p><br/></p><p>2.가루를 간 후 템퍼를 이용해 템핑 한다</p><p><br/></p><p>3.에스프레소 기계로 고온 고압으로 추출한다</p><p><br/></p><p>4.정량에 물에 에스프로소 샷을 넣는다</p>",
   },
   {
     name: "오렌지주스",
-    category: "juice",
+    category: "쥬스",
     img: Orange,
     recipe: "오렌지 200g \n 물 150g\n ",
     content:
@@ -312,7 +318,7 @@ export const RecipeData = [
   },
   {
     name: "카모마일",
-    category: "tea",
+    category: "티",
     img: chamomile,
     recipe: "카모마일 티\n 물",
     content:
@@ -320,7 +326,7 @@ export const RecipeData = [
   },
   {
     name: "초콜릿라떼",
-    category: "latte",
+    category: "라떼",
     img: choc,
     recipe: "초콜릿 가루 40g \n 우유 350ml",
     content:
@@ -328,7 +334,7 @@ export const RecipeData = [
   },
   {
     name: "바닐라쉐이크",
-    category: "Frappuccino",
+    category: "프라페",
     img: vshake,
     recipe: "바닐라 아이스크림 170g\n 우유 120g\n 얼음 100g",
     content:
@@ -336,7 +342,7 @@ export const RecipeData = [
   },
   {
     name: "BELT샌드위치",
-    category: "sandwich",
+    category: "샌드위치",
     img: belt,
     recipe: "BELT 샌드위치, 상추, 토마토",
     content:
