@@ -17,6 +17,8 @@ import HandOverUpload from "pages/HandOver/HandOverUpload";
 import HandOverList from "pages/HandOver/HandOverList";
 import HandOverDetail from "pages/HandOver/HandOverDetail";
 import HandOverEdit from "pages/HandOver/HandOverEdit";
+import HandOverListEdit from "pages/HandOver/HandOverListEdit";
+import NoticeListEdit from "pages/Notice/NoticeListEdit";
 function App() {
   return (
     <div id="container">
@@ -29,7 +31,12 @@ function App() {
             <Route path="/commute" component={Commute} />
             <Route path="/join" component={Join} />
             <Route path="/notice/upload" exact component={NoticeUpload} />
-            <Route path="/notice/edit" exact component={NoticeEdit} />
+            <Route
+              path="/notice/edit/:Noticeid?"
+              exact
+              component={NoticeEdit}
+            />
+            <Route path="/notice/listedit" exact component={NoticeListEdit} />
             <Route path="/notice/:typeid?" exact component={NoticeList} />
             <Route
               path="/notice/detail/:noticeid?"
@@ -42,7 +49,7 @@ function App() {
               component={MenuDetail}
             />
             <Route path="/menu/upload" exact component={MenuUpload} />
-            <Route path="/menu/edit" exact component={MenuEdit} />
+            <Route path="/menu/edit/:menuname?" exact component={MenuEdit} />
             <Route
               path="/menu/categoryedit"
               exact
@@ -51,6 +58,11 @@ function App() {
             <Route path="/menu/:categoryid?" exact component={MenuView} />{" "}
             {/*categoryid는 변수이름*/}
             <Route path="/handover/upload" exact component={HandOverUpload} />
+            <Route
+              path="/handover/listedit"
+              exact
+              component={HandOverListEdit}
+            />
             <Route path="/handover/:typeid?" exact component={HandOverList} />
             <Route
               path="/handover/detail/:HandOverid?"

@@ -56,7 +56,7 @@ const MenuDetail = ({ match }) => {
                 dangerouslySetInnerHTML={{ __html: Content }}
               ></div>
               <div className="right-bottom">
-                <a href="/menu/edit">수정</a>
+                <a href={`/menu/edit/${Title}`}>수정</a>
                 <a href="/menu">삭제</a>
               </div>
             </div>

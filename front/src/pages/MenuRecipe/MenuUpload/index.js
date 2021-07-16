@@ -52,7 +52,7 @@ const MenuUpload = () => {
                     data, //data는 변수 순회하는 아이
                     index
                   ) => (
-                    <option>{data.category}</option>
+                    <option>{data.text}</option>
                   )
                 )}
               </select>

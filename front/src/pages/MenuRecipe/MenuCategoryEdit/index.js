@@ -67,7 +67,7 @@ const MenuCategoryEdit = () => {
                 <tr key={index}>
                   <td className="td-left">
                     <div className="inner-cont">
-                      <span className="inner-text">{data.category}</span>
+                      <span className="inner-text">{data.text}</span>
                     </div>
                   </td>
                   <td className="up-down">

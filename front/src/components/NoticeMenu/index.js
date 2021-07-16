@@ -29,7 +29,7 @@ const NoticeMenu = () => {
             </li>
           ))}
           <li className="list-right">
-            <a href="/notice/categoryedit">목록수정</a>
+            <a href="/notice/listedit">목록수정</a>
             <a href="/notice/upload">등록</a>
           </li>
         </ul>

@@ -2,6 +2,7 @@ import Header from "layouts/Header";
 import "./styles.css";
 import React, { useEffect, useState } from "react";
 import { HandOverData, HandOverListData } from "static/FakeDates";
+import { withRouter } from "react-router-dom";
 
 const HandOverEdit = ({ match }) => {
   const HandOverid = match.params.HandOverid;
@@ -16,7 +17,9 @@ const HandOverEdit = ({ match }) => {
     const handOverData = FakeData.filter((data) => data.id === HandOverid);
     setTitle(handOverData[0].title);
     setContent(handOverData[0].content);
-    setType(handOverData[0].type);
+    if (handOverData[0].type === "day") setType("당일");
+    else if (handOverData[0].type === "open") setType("오픈");
+    else setType("마감");
   });
 
   const [HandOverMenu, setHandOverMenu] = useState([]);
@@ -65,7 +68,7 @@ const HandOverEdit = ({ match }) => {
                       data, //data는 변수 순회하는 아이
                       index
                     ) => (
-                      <option>{data.name}</option>
+                      <option>{data.text}</option>
                     )
                   )}
                 </select>
@@ -85,4 +88,4 @@ const HandOverEdit = ({ match }) => {
   );
 };
 
-export default HandOverEdit;
+export default withRouter(HandOverEdit);

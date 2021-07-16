@@ -10,12 +10,14 @@ const NoticeDetail = ({ match }) => {
   const [Title, setTitle] = useState("");
   const [Date, setDate] = useState("");
   const [Content, setContent] = useState("");
+  const [Id, setId] = useState("");
   const fakeData = NoticeData;
   useEffect(() => {
     const noticeData = fakeData.filter((data) => data.id === noticeid);
     setTitle(noticeData[0].title);
     setDate(noticeData[0].date);
     setContent(noticeData[0].content);
+    setId(noticeData[0].id);
   });
 
   return (
@@ -44,7 +46,7 @@ const NoticeDetail = ({ match }) => {
                 <a href="">다음</a>
               </div>
               <div className="bottom-right">
-                <a href="/notice/edit">수정</a>
+                <a href={`/notice/edit/${Id}`}>수정</a>
                 <a href="">삭제</a>
               </div>
             </div>
