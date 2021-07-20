@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken"; //jwt으로 줄여서
 
 const saltRounds = 10; //hash를 10번 하겠다. 1번만 하면 해커가 뚫을수 있으니 여러번 해주는것
 //상수화를 해놓는것이 좋다 상수화를 변수를 넣어줘야 유지보수에 좋기 때문
@@ -44,7 +45,7 @@ const UserSchema = new Schema(
       type: String,
     },
   },
-  { timestamps: true }  //최초로 만든시간과 수정한 시간이 나타나서 DB관리에 용이하다
+  { timestamps: true } //최초로 만든시간과 수정한 시간이 나타나서 DB관리에 용이하다
 );
 
 //몽고db에 메서드 만드는 방식
@@ -58,5 +59,29 @@ UserSchema.methods.setPassword = async function (password) {
   this.password = result; //hash한 결과물을 password에 넣어줌
 };
 
+//입력받은 비밀번호가 데이터베이스에 저장된 비밀번호와 같은지 비교하는 함수
+UserSchema.methods.checkPassword = async function (password) {
+  const result = await bcrypt.compare(password, this.password);
+  return result;
+};
+//우리가 가져온 password와 DB에 저장된 있는 password와(this.password) 비교
+//둘이 같으면 1(참), 틀리면(0)
+
+//토큰 생성
+UserSchema.methods.generateToken = async function () {
+  const token = jwt.sign(
+    {
+      _id: this.id, //그 유저의 아이디
+      email: this.email, //그 유저의 이메일
+      name: this.name, //그 유저의 네임
+      role: this.role,
+    }, //토큰에 담을 아이들
+    process.env.JWT_SECRET //JWT_SECRET 자물쇠의 키같은 느낌
+  );
+  //sign이 jwt에서 token을 만들어주는 함수
+  this.token = token;
+  await this.save(); //token만 저장할꺼라 이쪽에 저장하고 이렇게 token저장 완료
+  return token;
+};
 const User = mongoose.model("User", UserSchema); //mongodb언어로 변화 이름은 User라는 이름으로
 export default User;

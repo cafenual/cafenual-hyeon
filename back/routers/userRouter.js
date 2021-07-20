@@ -6,5 +6,7 @@ const router = express.Router();
 
 router.post("/register",userCtrl.register);
 //post->생성, get->조회, patch->업데이트, delete->삭제
-
+router.post("/login", userCtrl.login);
+//userCtrl에 있는 login함수
+router.post("/logout", userCtrl.logout);
 export default router;

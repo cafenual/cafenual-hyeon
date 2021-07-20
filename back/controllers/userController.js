@@ -45,3 +45,63 @@ export const register = async (req, res) => {
     });
   }
 };
+
+//로그인
+export const login = async (req, res) => {
+  const { email, password } = req.body;
+
+  //email 또는 password가 없을때의 예외 처리
+  //백엔드는 예외처리가 중요하다
+  if (!email || !password) {
+    return res.status(401).json({
+      //401은 정보가 안왔을때의 상태코드
+      success: false,
+      message: "정보가 입력되지 않았습니다",
+    });
+  }
+  try {
+    const user = await User.findOne({
+      //참과 거짓으로 나오는 함수가 아님 데이터베이스에 해당하는 값이 담김
+      //즉 그 이메일이 있는 유저 내용에 값이 담김
+      email,
+    });
+
+    if (!user) {
+      return res.status(401).json({
+        success: false,
+        message: "해당 이메일이 존재하지 않습니다",
+      });
+    }
+
+    const valid = await user.checkPassword(password);
+
+    if (!valid) {
+      return res.status(401).json({
+        success: false,
+        message: "비밀번호가 잘못 입력되었습니다",
+      });
+    }
+    const token = await user.generateToken();
+    //웹에는 새로고침을 해도 데이터가 안지워지는 공간이 총 3개가 있음(새로고침을 하면 원래는 데이터가 다 지워짐)
+    //로컬(잠깐 요기서 쓰는 용도(자동로그인)),세션(꺼버리면 초기화됨(휘발성이 강한 아이들)),쿠키(비밀정보를 넣는 느낌(방문증))
+    return res.cookie("user", token).status(200).json({
+      //cookie(name, value)
+      success: true,
+      user,
+    }); //user을 쿠키로 보내겠다
+  } catch (e) {
+    res.status(500).json({
+      //500은 나도 무슨 에러인지 모르겠음
+      e,
+    });
+  }
+};
+
+//로그아웃
+export const logout = async (req, res) => {
+  //export const하면 const한것만 나가겠다 export default하면 전부다 나가겠다
+  res.cookie("user", "").status(200).json({
+    usccess: true,
+    message: "로그아웃에 성공했습니다",
+  });
+};
