@@ -1,0 +1,38 @@
+#PasswordChange {
+  padding-top: 200px;
+  width: 100%;
+}
+#PasswordChange .all-block {
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+}
+#PasswordChange .title {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 35px;
+  color: #333;
+  margin-bottom: 10px;
+}
+#PasswordChange input {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 30px;
+  border: #fff;
+  border-bottom: 2px solid #d8d8d8;
+  background-color: #fefefe;
+}
+#PasswordChange .password-input {
+  margin-bottom: 0px;
+}
+#PasswordChange .explain {
+  margin-bottom: 40px;
+  font-size: 11px;
+}
+#PasswordChange button {
+  border: none;
+  width: 100%;
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+}

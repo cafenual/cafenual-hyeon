@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "layouts/Header";
 import "./styles.css";
 import { menuData } from "static/FakeDates";
-import { AiFillFileAdd } from "react-icons/ai";
-import { AiFillCaretUp } from "react-icons/ai";
-import { AiFillCaretDown } from "react-icons/ai";
+import { AiFillFileAdd, AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 import { BiTrash } from "react-icons/bi";
 
 const MenuCategoryEdit = () => {
