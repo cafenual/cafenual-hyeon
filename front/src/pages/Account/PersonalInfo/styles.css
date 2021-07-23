@@ -1,0 +1,48 @@
+#PersonalInfo {
+  padding-top: 100px;
+  width: 100%;
+}
+
+#PersonalInfo .all-block {
+  margin: 0 auto;
+  width: 455px;
+  height: 700px;
+}
+#PersonalInfo .title {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+}
+#PersonalInfo .content {
+  margin-top: 15px;
+  width: 100%;
+  border-bottom: 2px solid #d8d8d8;
+  margin-bottom: 27px;
+  font-weight: lighter;
+  font-size: 15px;
+  color: #424242;
+}
+#PersonalInfo label {
+  margin-bottom: 10px;
+}
+#PersonalInfo button {
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+  width: 100%;
+  margin: 0px;
+  border: none;
+}
+#PersonalInfo .change {
+  text-align: center;
+  background-color: #d8d8d8;
+  width: 100px;
+  height: 23px;
+  font-size: 14px;
+  float: right;
+  margin-bottom: 10px;
+}
+#PersonalInfo .password-block {
+  display: block;
+}
