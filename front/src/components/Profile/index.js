@@ -7,9 +7,8 @@ const Profile = () => {
     <div id="Profile">
       <div className="profile-top">
         <span>계정정보</span>
-        <a href="">
+        <a href={`/account`}>
           <span>더보기</span>
-          <BsChevronRight />
         </a>
       </div>
       <div className="profile-img">

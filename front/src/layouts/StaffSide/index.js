@@ -31,7 +31,7 @@ const StaffSide = () => {
         </div>
         <ul>
           <li>
-            <NavLink to={"/staff/information"} exact activeStyle={activeStyle}>
+            <NavLink to={"/account"} exact activeStyle={activeStyle}>
               <BsFillPersonLinesFill />
               <span>계정정보</span>
             </NavLink>

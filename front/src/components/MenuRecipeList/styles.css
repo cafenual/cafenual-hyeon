@@ -50,6 +50,7 @@
   margin: 0;
   padding: 0;
   float: right;
+  margin-bottom: 20px;
 }
 #MenuRecipeList button {
   width: 34px;

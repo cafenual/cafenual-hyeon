@@ -30,3 +30,6 @@ svg {
   display: inline-block;
   width: 150px;
 }
+#Profile .profile-top span {
+  margin-right: 10px;
+}
