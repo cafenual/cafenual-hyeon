@@ -1,19 +1,10 @@
-body {
-  padding: 0px;
-  margin: 0px;
-}
-#Join .back-ground {
-  height: calc(100vh); /*화면안에 정가운데에 옮기는 작업(장소)*/
-  width: 100%;
+#Join {
+  padding-top: 160px;
 }
 #Join .join_form {
-  left: 50%; /*화면안에 정가운데에 옮기는 작업(물건)*/
-  position: fixed;
-  top: 45%;
-  transform: translate(-50%, -50%);
-
+  margin: 0 auto;
   width: 455px;
-  height: 650px;
+  height: 700px;
 }
 #Join .joinform_title {
   margin-bottom: 45px;
@@ -33,6 +24,7 @@ button {
   height: 35px;
   background-color: #424242;
   color: #fff;
+  margin: 0px;
 }
 #Join .password_input {
   margin-bottom: 10px;

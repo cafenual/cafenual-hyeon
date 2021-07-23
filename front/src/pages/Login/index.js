@@ -21,15 +21,17 @@ const Login = () => {
           <form>
             <input
               type="text"
-              placeholder="사원번호"
+              placeholder="이메일"
               id="user-id"
               onChange={onChangeId}
+              required
             />
             <input
               type="password"
               placeholder="비밀번호"
               id="user-pass"
               onChange={onChangePw}
+              required
             />
             <div className="login-manage">
               <div className="join_link">

@@ -1,15 +1,12 @@
+#Login {
+  padding-top: 280px;
+}
 #Login .back-ground {
-  height: cale(100vh);
   width: 100%;
 }
 #Login .login-form {
-  left: 50%;
-  position: fixed;
-  top: 45%;
-  transform: translate(-50%, -50%);
-
+  margin: 0 auto;
   width: 500px;
-  border: #fff;
   height: 400px;
 }
 .login-title {
@@ -24,7 +21,7 @@
   height: 45px;
   margin-bottom: 30px;
   padding: 10px;
-  border: #fff;
+  border: none;
   border-bottom: 2px solid #d8d8d8;
   background-color: #fefefe;
 }

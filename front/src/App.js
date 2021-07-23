@@ -19,6 +19,16 @@ import HandOverDetail from "pages/HandOver/HandOverDetail";
 import HandOverEdit from "pages/HandOver/HandOverEdit";
 import HandOverListEdit from "pages/HandOver/HandOverListEdit";
 import NoticeListEdit from "pages/Notice/NoticeListEdit";
+import Account from "pages/Account/Identify";
+import AccountPersonalInfo from "pages/Account/PersonalInfo";
+import AccountPasswordChange from "pages/Account/PasswordChange";
+
+import precat from "components/EmptyPages/Category";
+import precated from "components/EmptyPages/CategoryEdit";
+import predetail from "components/EmptyPages/Detail";
+import prelist from "components/EmptyPages/List";
+import pruped from "components/EmptyPages/UploadOrEdit";
+
 function App() {
   return (
     <div id="container">
@@ -74,6 +84,23 @@ function App() {
               exact
               component={HandOverEdit}
             />
+            <Route path="/account" exact component={Account} />
+            <Route
+              path="/account/personalinfo"
+              exact
+              component={AccountPersonalInfo}
+            />
+            <Route
+              path="/account/personalinfo/passwordchange"
+              exact
+              component={AccountPasswordChange}
+            />
+            {/* */}
+            <Route path="/pre/cat" exact component={precat} />
+            <Route path="/pre/catedit" exact component={precated} />
+            <Route path="/pre/detail" exact component={predetail} />
+            <Route path="/pre/list" exact component={prelist} />
+            <Route path="/pre/upored" exact component={pruped} />
           </Switch>
         </div>
       </BrowserRouter>
