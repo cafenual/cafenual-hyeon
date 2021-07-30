@@ -1,0 +1,84 @@
+#ManagementDetail {
+  padding-top: 160px;
+}
+#ManagementDetail .blocks {
+  margin: 0 auto;
+  width: 850px;
+}
+#ManagementDetail .all-block {
+  padding: 25px 30px 25px 30px;
+  border-top: 2px solid #bdbdbd;
+  border-bottom: 2px solid #bdbdbd;
+}
+#ManagementDetail .top-block {
+  display: flex;
+}
+#ManagementDetail .img-box {
+  width: 320px;
+  height: 350px;
+  margin: 0px 35px 20px 0px;
+}
+#ManagementDetail .img-box img {
+  width: 100%;
+  height: 100%;
+}
+#ManagementDetail .text-line {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+#ManagementDetail .text-line select {
+  color: black;
+  border-radius: 0px;
+  margin: 0px;
+  height: 30px;
+  width: 65%;
+  border: none; /*1px solid #bdbdbd;*/
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+#ManagementDetail .text-line input {
+  color: black;
+  border-radius: 0px;
+  padding-left: 10px;
+  height: 30px;
+  width: 65%;
+  border: none;
+  background-color: #e6e6e6;
+  font-weight: bold;
+}
+#ManagementDetail input[type="number"]::-webkit-outer-spin-button,  /*input옆에 있는 버튼 없애기*/
+  #ManagementDetail input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#ManagementDetail .bottom-block {
+  padding: 10px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#ManagementDetail .bottom-left a {
+  float: left;
+  width: 98px;
+  height: 38px;
+  margin-right: 10px;
+  border: 1px solid #1e1e1e;
+  font-size: 14px;
+  line-height: 38px;
+  color: #1e1e1e;
+  text-align: center;
+  text-decoration: none;
+}
+#ManagementDetail .bottom-right a {
+  float: right;
+  width: 100px;
+  height: 40px;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #4d4d4d;
+  text-align: center;
+  text-decoration: none;
+}
