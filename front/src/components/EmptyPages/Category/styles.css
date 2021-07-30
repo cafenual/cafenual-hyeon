@@ -1,0 +1,23 @@
+#Category {
+  padding-top: 10px;
+}
+#Category .list {
+  overflow: hidden;
+  width: 860px;
+  padding: 10px 0 15px;
+}
+#Category .list {
+  justify-content: space-between;
+}
+#Category .list-left {
+  float: left;
+}
+#Category .list li a {
+  padding: 0 13px 7px 12px;
+  letter-spacing: -0.3px;
+  line-height: 20px;
+  font-size: 16px;
+}
+#Category .list-right {
+  float: right;
+}

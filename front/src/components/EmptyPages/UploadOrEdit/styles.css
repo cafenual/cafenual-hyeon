@@ -1,0 +1,113 @@
+#UploadOrEdit {
+  padding-top: 40px;
+}
+#UploadOrEdit .all-block {
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
+  height: calc(83vh);
+  width: calc(93%);
+  border: 1.5px solid #ddd;
+  margin-bottom: 20px;
+}
+#UploadOrEdit .top {
+  flex: 1;
+  border-bottom: 1.5px solid #ddd;
+  font-size: 35px;
+}
+#UploadOrEdit .input-title {
+  width: 100%;
+  font-size: 30px;
+  border: 0 none;
+  line-height: 1.5;
+  font-weight: bold;
+  background-color: #fefefe;
+}
+#UploadOrEdit .bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 12;
+}
+#UploadOrEdit .bottom-top {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  padding: 10px 30px 10px 20px; /*위 오른쪽 아래 왼쪽*/
+}
+#UploadOrEdit .img-link {
+  flex: 2;
+  float: right;
+}
+#UploadOrEdit .menu-kind {
+  flex: 1;
+  float: right;
+}
+#UploadOrEdit .bottom-bottom {
+  flex: 10;
+  padding: 10px 20px 10px 20px;
+  overflow-y: scroll;
+}
+#UploadOrEdit .btn-area {
+  flex: 1;
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+}
+#UploadOrEdit .btn-area button {
+  height: 20px;
+  background-color: #424242;
+  color: #fff;
+  width: 100%;
+  margin: 0px;
+  border: none;
+  height: 100%;
+  font-size: 15px;
+}
+#UploadOrEdit .img label {
+  width: 80px;
+  height: 35px;
+  display: inline-block;
+  color: #ffff;
+  line-height: 30px;
+  vertical-align: middle;
+  background-color: #4a4a4a;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+#UploadOrEdit .img input[type="file"] {
+  /* 기존 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+#UploadOrEdit .img {
+  float: right;
+  padding-top: 10px;
+}
+#UploadOrEdit .upload-name {
+  display: inline-block;
+  height: 35px;
+  font-size: 15px;
+  padding: 0 10px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+#UploadOrEdit select {
+  width: 200px; /* 원하는 너비설정 */
+  padding: 0.5em 0.5em; /* 여백으로 높이 설정 */
+  border: 1px solid #999;
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  float: right;
+  margin-top: 10px;
+}

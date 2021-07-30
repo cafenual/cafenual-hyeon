@@ -22,12 +22,14 @@ import NoticeListEdit from "pages/Notice/NoticeListEdit";
 import Account from "pages/Account/Identify";
 import AccountPersonalInfo from "pages/Account/PersonalInfo";
 import AccountPasswordChange from "pages/Account/PasswordChange";
+import ManagementList from "pages/Manage/ManageList";
+import Managementdetail from "pages/Manage/ManageDetail";
 
-import precat from "components/EmptyPages/Category";
-import precated from "components/EmptyPages/CategoryEdit";
-import predetail from "components/EmptyPages/Detail";
-import prelist from "components/EmptyPages/List";
-import pruped from "components/EmptyPages/UploadOrEdit";
+import EmptyCategory from "components/EmptyPages/Category";
+import EmptyCategoryEdit from "components/EmptyPages/CategoryEdit";
+import EmptyDetail from "components/EmptyPages/Detail";
+import EmptyList from "components/EmptyPages/List";
+import EmptyUploadOrEdit from "components/EmptyPages/UploadOrEdit";
 
 function App() {
   return (
@@ -95,12 +97,26 @@ function App() {
               exact
               component={AccountPasswordChange}
             />
+            <Route
+              path="/management/:menuid?"
+              exact
+              component={ManagementList}
+            />
+            <Route
+              path="/management/detail/:id?"
+              exact
+              component={Managementdetail}
+            />
             {/* */}
-            <Route path="/pre/cat" exact component={precat} />
-            <Route path="/pre/catedit" exact component={precated} />
-            <Route path="/pre/detail" exact component={predetail} />
-            <Route path="/pre/list" exact component={prelist} />
-            <Route path="/pre/upored" exact component={pruped} />
+            <Route path="/empty/category" exact component={EmptyCategory} />
+            <Route
+              path="/empty/ca-ed"
+              exact
+              component={EmptyCategoryEdit}
+            />
+            <Route path="/empty/detail" exact component={EmptyDetail} />
+            <Route path="/empty/list" exact component={EmptyList} />
+            <Route path="/empty/up-ed" exact component={EmptyUploadOrEdit} />
           </Switch>
         </div>
       </BrowserRouter>
