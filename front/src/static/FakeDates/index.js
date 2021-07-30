@@ -4,6 +4,155 @@ import chamomile from "static/img/cham.jpg";
 import choc from "static/img/chocolatelatte.jpg";
 import vshake from "static/img/vshake.jpg";
 import belt from "static/img/belt.jpg";
+import person from "static/img/person.jpg";
+import flower from "static/img/flower.jpg";
+import moon from "static/img/moon.jpg";
+import { BsAwardFill, BsAward } from "react-icons/bs";
+
+export const ManagementRoleData = [
+  {
+    text: "매니저",
+  },
+  {
+    text: "아르바이트",
+  },
+];
+export const ManagementMenuData = [
+  {
+    text: "오픈",
+  },
+  {
+    text: "미들",
+  },
+  {
+    text: "마감",
+  },
+  {
+    text: "퇴사",
+  },
+];
+export const ManagementData = [
+  {
+    img: person,
+    name: "이도현",
+    pay: "10000",
+    role: "매니저",
+    role2: <BsAwardFill />,
+    date: "2020 - 06 - 03",
+    time: "오픈",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    id: "1",
+  },
+  {
+    img: flower,
+    name: "이도현2",
+    pay: "11000",
+    role: "매니저",
+    role2: <BsAwardFill />,
+    date: "2019 - 12 - 11",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "마감",
+    id: "2",
+  },
+  {
+    img: person,
+    name: "신미르",
+    pay: "8760",
+    role: "아르바이트",
+    role2: <BsAward />,
+    date: "2021 - 07 - 30",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "오픈",
+    id: "3",
+  },
+  {
+    img: person,
+    name: "이지호",
+    pay: "8760",
+    role: "아르바이트",
+    role2: <BsAward />,
+    date: "2021 - 05 - 10",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "오픈",
+    id: "4",
+  },
+  {
+    img: person,
+    name: "신미르",
+    pay: "8760",
+    role: "아르바이트",
+    role2: <BsAward />,
+    date: "2021 - 07 - 30",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "미들",
+    id: "5",
+  },
+  {
+    img: moon,
+    name: "이지호",
+    pay: "8760",
+    role: "아르바이트",
+    role2: <BsAward />,
+    date: "2021 - 03 - 12",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "미들",
+    id: "10",
+  },
+  {
+    img: person,
+    name: "신미르",
+    pay: "8760",
+    role: "아르바이트",
+    role2: <BsAward />,
+    date: "2021 - 05 - 30",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "마감",
+    id: "6",
+  },
+  {
+    img: moon,
+    name: "이지호",
+    pay: "8760",
+    role: "아르바이트",
+    role2: <BsAward />,
+    date: "2021 - 06 - 01",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "마감",
+    id: "7",
+  },
+  {
+    img: moon,
+    name: "신미르",
+    pay: "8760",
+    role: "아르바이트",
+    role2: <BsAward />,
+    date: "2021 - 06 - 01",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "퇴사",
+    id: "8",
+  },
+  {
+    img: flower,
+    name: "이소현",
+    pay: "8760",
+    role: "아르바이트",
+    role2: <BsAward />,
+    date: "2021 - 06 - 01",
+    tel: "010-0000-0000",
+    email: "ehgus3798@naver.com",
+    time: "퇴사",
+    id: "9",
+  },
+];
 
 export const NoticeMenuData = [
   {
