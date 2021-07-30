@@ -1,0 +1,23 @@
+#ManagementMenu {
+  padding-top: 10px;
+}
+#ManagementMenu .list {
+  overflow: hidden;
+  width: 820px;
+  padding: 10px 0 15px;
+}
+#ManagementMenu .list {
+  justify-content: space-between;
+}
+#ManagementMenu .list-left {
+  float: left;
+}
+#ManagementMenu .list li a {
+  padding: 0 13px 7px 12px;
+  letter-spacing: -0.3px;
+  line-height: 20px;
+  font-size: 16px;
+}
+#ManagementMenu .list-right {
+  float: right;
+}

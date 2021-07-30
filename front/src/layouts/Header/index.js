@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom"; //메뉴를 클릭할때 링크를 타고 갈 수 있도록
 import "./styles.css";
 import { BiFoodMenu, BiBell, BiCalendarEdit } from "react-icons/bi";
-import { BsGrid } from "react-icons/bs";
-import cafe from "./cafe.png";
+import { BsGrid, BsCardList } from "react-icons/bs";
+import cafe from "static/img/cafe.png";
 
 const Header = () => {
   const activeStyle = {
@@ -48,6 +48,12 @@ const Header = () => {
                 <NavLink to={"/handover"} activeStyle={activeStyle}>
                   <BiCalendarEdit />
                   <span>인수인계</span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={"/management"} activeStyle={activeStyle}>
+                  <BsCardList />
+                  <span>직원관리</span>
                 </NavLink>
               </li>
             </ul>
