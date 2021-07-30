@@ -1,0 +1,84 @@
+#ManagementList {
+  padding-top: 50px;
+}
+#ManagementList .all-block {
+  margin: 0 auto;
+  width: 820px;
+}
+#ManagementList fieldset {
+  border: 0 none;
+  padding: 0;
+}
+#ManagementList .search-input {
+  width: 450px;
+  height: 42px;
+  border: 0 none;
+  box-sizing: border-box;
+  background-color: #fefefe;
+  border-bottom: 2px solid #a4a4a4;
+  margin-bottom: 20px;
+  padding: 0;
+  float: left;
+}
+#ManagementList .search-btn {
+  width: 34px;
+  height: 42px;
+  border-bottom: 2px solid #a4a4a4;
+  margin: 0px;
+}
+#ManagementList .middle-block {
+  overflow: hidden;
+  word-break: normal;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border-top: 2px solid #a4a4a4;
+  word-break: normal;
+  min-height: calc(64vh);
+}
+#ManagementList .table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+#ManagementList colgroup .one {
+  width: 30%;
+}
+#ManagementList colgroup .two {
+  width: 25%;
+}
+#ManagementList colgroup .three {
+  width: 15%;
+}
+#ManagementList colgroup .four {
+  width: 30%;
+}
+#ManagementList th {
+  padding: 15px 20px;
+  color: #1e1e1e;
+  border-left: 0 none;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  font-weight: normal;
+  font-size: 14px;
+}
+#ManagementList td {
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+  line-height: 55px;
+  text-align: center;
+}
+#ManagementList .inner-text {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
+}
+#ManagementList .link-text {
+  color: #1e1e1e;
+  display: block;
+}
+#ManagementList .bottom-block {
+  justify-content: space-between;
+  display: flex;
+}
