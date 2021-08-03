@@ -3,6 +3,7 @@ import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config"; //.env파일 안에서는 뛰어쓰기하면 인식안됨 조심
 import userRouter from "./routers/userRouter";
+import noticeRouter from "./routers/noticeRouter";
 import cookieParser from "cookie-parser";
 
 const app = express(); //express 실행시킴
@@ -34,4 +35,5 @@ const handleListening = () => {
 };
 
 app.use("/api/user", userRouter);
+app.use("/api/notice",noticeRouter);
 app.listen(process.env.PORT, handleListening);
