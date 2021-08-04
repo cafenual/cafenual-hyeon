@@ -28,7 +28,6 @@ const NoticeList = ({ match }) => {
           <div className="noticelist-top">
             <NoticeMenu />
           </div>
-
           <div className="noticelist-middle">
             <table className="table">
               <colgroup>

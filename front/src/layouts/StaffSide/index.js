@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiFillHome, AiFillClockCircle } from "react-icons/ai";
-import { BsFillPersonLinesFill, BsCalendarFill } from "react-icons/bs";
+import {
+  BsFillPersonLinesFill,
+  BsCalendarFill,
+  BsFileText,
+} from "react-icons/bs";
 import "./styles.css";
 
 const StaffSide = () => {
@@ -31,7 +35,7 @@ const StaffSide = () => {
         </div>
         <ul>
           <li>
-            <NavLink to={"/account"} exact activeStyle={activeStyle}>
+            <NavLink to={"/staff/account"} exact activeStyle={activeStyle}>
               <BsFillPersonLinesFill />
               <span>계정정보</span>
             </NavLink>
@@ -46,6 +50,12 @@ const StaffSide = () => {
             <NavLink to={"/staff/worktime"} exact activeStyle={activeStyle}>
               <AiFillClockCircle />
               <span>일한시간</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to={"/staff/work"} exact activeStyle={activeStyle}>
+              <BsFileText />
+              <span>ToDo</span>
             </NavLink>
           </li>
         </ul>

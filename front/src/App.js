@@ -24,6 +24,7 @@ import AccountPersonalInfo from "pages/Account/PersonalInfo";
 import AccountPasswordChange from "pages/Account/PasswordChange";
 import ManagementList from "pages/Manage/ManageList";
 import Managementdetail from "pages/Manage/ManageDetail";
+import WorkList from "pages/Work/WorkList";
 
 import EmptyCategory from "components/EmptyPages/Category";
 import EmptyCategoryEdit from "components/EmptyPages/CategoryEdit";
@@ -37,6 +38,13 @@ function App() {
       <BrowserRouter>
         <div id="main">
           <Switch>
+            {/*Empty Pages*/}
+            <Route path="/empty/category" exact component={EmptyCategory} />
+            <Route path="/empty/ca-ed" exact component={EmptyCategoryEdit} />
+            <Route path="/empty/detail" exact component={EmptyDetail} />
+            <Route path="/empty/list" exact component={EmptyList} />
+            <Route path="/empty/up-ed" exact component={EmptyUploadOrEdit} />
+            {/*Empty Pages */}
             <Route path="/dashboard" exact component={DashBoard} />
             <Route path="/" exact component={Login} />{" "}
             {/* exact를 안치면 정확하게가 아니어서 다른 페이지에 /가 붙어 있으므로 다른 페이지로 이동이 안됨 */}
@@ -86,14 +94,14 @@ function App() {
               exact
               component={HandOverEdit}
             />
-            <Route path="/account" exact component={Account} />
+            <Route path="/staff/account" exact component={Account} />
             <Route
-              path="/account/personalinfo"
+              path="/staff/account/personalinfo"
               exact
               component={AccountPersonalInfo}
             />
             <Route
-              path="/account/personalinfo/passwordchange"
+              path="/staff/account/personalinfo/passwordchange"
               exact
               component={AccountPasswordChange}
             />
@@ -107,16 +115,7 @@ function App() {
               exact
               component={Managementdetail}
             />
-            {/* */}
-            <Route path="/empty/category" exact component={EmptyCategory} />
-            <Route
-              path="/empty/ca-ed"
-              exact
-              component={EmptyCategoryEdit}
-            />
-            <Route path="/empty/detail" exact component={EmptyDetail} />
-            <Route path="/empty/list" exact component={EmptyList} />
-            <Route path="/empty/up-ed" exact component={EmptyUploadOrEdit} />
+            <Route path="/staff/work/:typeid?" exact component={WorkList} />
           </Switch>
         </div>
       </BrowserRouter>

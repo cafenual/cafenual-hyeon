@@ -22,7 +22,9 @@ const PersonalInfo = () => {
           <span className="password-block">
             비밀번호
             <div className="change">
-              <a href="/account/personalinfo/passwordchange">비밀번호 변경</a>
+              <a href="/staff/account/personalinfo/passwordchange">
+                비밀번호 변경
+              </a>
             </div>
             <div className="content">********</div>
           </span>

@@ -26,7 +26,7 @@ const Header = () => {
             <ul>
               {/* 목록 태그 */}
               <li>
-                <NavLink to={"/dashboard"} activStyle={activeStyle}>
+                <NavLink to={`/dashboard` || `/staff`} activStyle={activeStyle}>
                   <BsGrid />
                   <span>대시보드</span> {/*div와 비슷하지만 인라인 타입*/}
                 </NavLink>
