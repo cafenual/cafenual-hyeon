@@ -8,7 +8,82 @@ import person from "static/img/person.jpg";
 import flower from "static/img/flower.jpg";
 import moon from "static/img/moon.jpg";
 import { BsAwardFill, BsAward } from "react-icons/bs";
-
+export const WorkData = [
+  {
+    type: "매일",
+    time: "오픈",
+    content: "과일 소분",
+    content2: "키위(주스용)",
+    content3: "레몬(슬라이스, 웨지용)",
+    content4: "오렌지(주스용, 반달슬라이스)",
+    content5: "바나나(주스용)",
+    content6: "시즌과일(시즌음료용)",
+  },
+  {
+    type: "매일",
+    time: "오픈",
+    content: "베이스",
+    content2: "시럽베이스",
+    content3: "과일베스",
+    content4: "시즌베이스",
+    content5: "상미기한 확인",
+  },
+  {
+    type: "매일",
+    time: "오픈",
+    content: "아이스크림 소분",
+    content2: "아포가토용",
+    content3: "데코용",
+  },
+  {
+    type: "매일",
+    time: "오픈",
+    content: "포스기 돈 확인",
+  },
+  {
+    type: "매일",
+    time: "오픈",
+    content: "빨대 채워넣기",
+  },
+  {
+    type: "매일",
+    time: "오픈",
+    content: "가루 소분하기",
+  },
+  {
+    type: "주간",
+    time: "오픈",
+    content: "제빙기 청소",
+  },
+  {
+    type: "주간",
+    time: "오픈",
+    content: "물류정리",
+  },
+  {
+    type: "주간",
+    time: "오픈",
+    content: "냉동고 닦기",
+  },
+  {
+    type: "주간",
+    time: "오픈",
+    content: "냉장고 닦기",
+  },
+  {
+    type: "주간",
+    time: "오픈",
+    content: "MD장 진열 및 정리",
+  },
+];
+export const WorkMenuData = [
+  {
+    text: "매일",
+  },
+  {
+    text: "주간",
+  },
+];
 export const ManagementRoleData = [
   {
     text: "매니저",
