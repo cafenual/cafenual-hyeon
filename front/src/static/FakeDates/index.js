@@ -8,72 +8,99 @@ import person from "static/img/person.jpg";
 import flower from "static/img/flower.jpg";
 import moon from "static/img/moon.jpg";
 import { BsAwardFill, BsAward } from "react-icons/bs";
+
 export const WorkData = [
   {
     type: "매일",
     time: "오픈",
-    content: "과일 소분",
-    content2: "키위(주스용)",
-    content3: "레몬(슬라이스, 웨지용)",
-    content4: "오렌지(주스용, 반달슬라이스)",
-    content5: "바나나(주스용)",
-    content6: "시즌과일(시즌음료용)",
+    title: "과일 소분",
+    content: [
+      "키위(주스용)",
+      "레몬(슬라이스, 웨지용)",
+      "오렌지(주스용, 반달슬라이스)",
+      "바나나(주스용)",
+      "시즌과일(시즌음료용)",
+    ],
   },
   {
     type: "매일",
     time: "오픈",
-    content: "베이스",
-    content2: "시럽베이스",
-    content3: "과일베스",
-    content4: "시즌베이스",
-    content5: "상미기한 확인",
+    title: "베이스",
+    content: ["시럽베이스", "과일베스", "시즌베이스", "상미기한 확인"],
   },
   {
     type: "매일",
     time: "오픈",
-    content: "아이스크림 소분",
-    content2: "아포가토용",
-    content3: "데코용",
+    title: "아이스크림 소분",
+    content: ["아포가토용", "데코용"],
   },
   {
     type: "매일",
     time: "오픈",
-    content: "포스기 돈 확인",
+    title: "포스",
+    content: ["포스기 키기", "포스 초기돈 확인", "시재입금 확인"],
   },
   {
     type: "매일",
     time: "오픈",
-    content: "빨대 채워넣기",
+    title: "부족한 물품 채워넣기",
+    content: [
+      "빨대 채우기",
+      "컵 채우기",
+      "티슈 채우기",
+      "손님용 시럽 및 가루설탕 채우기",
+    ],
   },
   {
     type: "매일",
     time: "오픈",
-    content: "가루 소분하기",
+    title: "가루 소분하기",
+    content: [
+      "초콜릿 가루 소분",
+      "요거트 가루 소분",
+      "홍차 가루 소분",
+      "녹차 가루 소분",
+    ],
   },
   {
     type: "주간",
     time: "오픈",
-    content: "제빙기 청소",
+    title: "제빙기 청소",
+    content: [
+      "얼음스쿱 설거지",
+      "얼음 정리",
+      "약품 청소",
+      "얼음 새로 나오는지 확인",
+    ],
   },
   {
     type: "주간",
     time: "오픈",
-    content: "물류정리",
+    title: "물류정리",
+    content: [
+      "우유 정리",
+      "냉동보관 물품 정리",
+      "냉장 보관 물품 정리",
+      "실온 보관 물품 정리",
+      "물류 다 왔는지 체크 확인",
+    ],
   },
   {
     type: "주간",
     time: "오픈",
-    content: "냉동고 닦기",
+    title: "냉장고 and 냉동고",
+    content: ["냉장고 정리", "냉장고 닦기", "냉동고 정리", "냉동고 닦기"],
   },
   {
     type: "주간",
     time: "오픈",
-    content: "냉장고 닦기",
-  },
-  {
-    type: "주간",
-    time: "오픈",
-    content: "MD장 진열 및 정리",
+    title: "MD장 ",
+    content: [
+      "MD장 닦기",
+      "MD장 물품 정리",
+      "MD장 진열",
+      "MD장 물품 유통기한 확인",
+    ],
   },
 ];
 export const WorkMenuData = [
@@ -95,9 +122,6 @@ export const ManagementRoleData = [
 export const ManagementMenuData = [
   {
     text: "오픈",
-  },
-  {
-    text: "미들",
   },
   {
     text: "마감",
@@ -154,30 +178,6 @@ export const ManagementData = [
     email: "ehgus3798@naver.com",
     time: "오픈",
     id: "4",
-  },
-  {
-    img: person,
-    name: "신미르",
-    pay: "8760",
-    role: "아르바이트",
-    role2: <BsAward />,
-    date: "2021 - 07 - 30",
-    tel: "010-0000-0000",
-    email: "ehgus3798@naver.com",
-    time: "미들",
-    id: "5",
-  },
-  {
-    img: moon,
-    name: "이지호",
-    pay: "8760",
-    role: "아르바이트",
-    role2: <BsAward />,
-    date: "2021 - 03 - 12",
-    tel: "010-0000-0000",
-    email: "ehgus3798@naver.com",
-    time: "미들",
-    id: "10",
   },
   {
     img: person,
