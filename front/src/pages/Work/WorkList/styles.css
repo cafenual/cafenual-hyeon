@@ -1,0 +1,59 @@
+#WorkList {
+  padding-top: 50px;
+}
+#WorkList .all-block {
+  margin: 0 auto;
+  width: 860px;
+  overflow: hidden;
+}
+#WorkList .middle-block {
+  height: calc(
+    70vh
+  ); /*나중에는 어느 길이 이상이 되면 드래그바가 생기게 바꾸자*/
+}
+#WorkList .big-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  margin-top: 10px;
+  border-top: 2px solid #848484;
+  padding: 20px;
+}
+#WorkList colgroup .left {
+  width: 10%;
+}
+#WorkList colgroup .right {
+  width: 90%;
+}
+#WorkList tr {
+  margin-top: 10px;
+}
+#WorkList td {
+  font-size: 14px;
+  line-height: 40px;
+}
+#WorkList summary {
+  list-style: none;
+  margin-top: 10px;
+}
+#WorkList summary svg {
+  color: #424242;
+  margin-right: 5px;
+}
+#WorkList .title-text {
+  font-size: 16px;
+}
+#WorkList .check-block {
+  vertical-align: baseline;
+}
+#WorkList .small-check {
+  margin: 5px 15px 10px 20px;
+}
+#WorkList .bottom-block button {
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+  margin: 20px 0px 20px 0px; /*상 우 하 좌*/
+  width: 100%;
+}

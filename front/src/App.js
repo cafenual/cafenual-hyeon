@@ -1,3 +1,11 @@
+import EmptyCategory from "components/EmptyPages/Category";
+import EmptyCategoryEdit from "components/EmptyPages/CategoryEdit";
+import EmptyDetail from "components/EmptyPages/Detail";
+import EmptyList from "components/EmptyPages/List";
+import EmptyUploadOrEdit from "components/EmptyPages/UploadOrEdit";
+
+import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Commute from "pages/Commute";
 import Join from "pages/Join";
 import Login from "pages/Login";
@@ -6,8 +14,6 @@ import NoticeList from "pages/Notice/NoticeList";
 import NoticeUpload from "pages/Notice/NoticeUpload";
 import NoticeDetail from "pages/Notice/NoticeDetail";
 import NoticeEdit from "pages/Notice/NoticeEdit";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "./App.css";
 import MenuView from "pages/MenuRecipe/MenuList";
 import MenuDetail from "pages/MenuRecipe/MenuDetail";
 import MenuUpload from "pages/MenuRecipe/MenuUpload";
@@ -25,12 +31,8 @@ import AccountPasswordChange from "pages/Account/PasswordChange";
 import ManagementList from "pages/Manage/ManageList";
 import Managementdetail from "pages/Manage/ManageDetail";
 import WorkList from "pages/Work/WorkList";
-
-import EmptyCategory from "components/EmptyPages/Category";
-import EmptyCategoryEdit from "components/EmptyPages/CategoryEdit";
-import EmptyDetail from "components/EmptyPages/Detail";
-import EmptyList from "components/EmptyPages/List";
-import EmptyUploadOrEdit from "components/EmptyPages/UploadOrEdit";
+import WorkListEdit from "pages/Work/WorkMenuEdit";
+import WorkUploadEdit from "pages/Work/WorkUploadEdit";
 
 function App() {
   return (
@@ -116,6 +118,12 @@ function App() {
               component={Managementdetail}
             />
             <Route path="/staff/work/:typeid?" exact component={WorkList} />
+            <Route path="/work/listedit" exact component={WorkListEdit} />
+            <Route
+              path="/work/uploadedit"
+              exact
+              component={WorkUploadEdit}
+            />
           </Switch>
         </div>
       </BrowserRouter>
