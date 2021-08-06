@@ -7,7 +7,8 @@ import belt from "static/img/belt.jpg";
 import person from "static/img/person.jpg";
 import flower from "static/img/flower.jpg";
 import moon from "static/img/moon.jpg";
-import { BsAwardFill, BsAward } from "react-icons/bs";
+import { BsAwardFill, BsAward, BsFillBrightnessHighFill } from "react-icons/bs";
+import { AiFillStar } from "react-icons/ai";
 
 export const WorkData = [
   {
@@ -114,17 +115,21 @@ export const WorkMenuData = [
 export const ManagementRoleData = [
   {
     text: "매니저",
+    icon: <BsAwardFill />,
   },
   {
     text: "아르바이트",
+    icon: <BsAward />,
   },
 ];
 export const ManagementMenuData = [
   {
     text: "오픈",
+    icon: <BsFillBrightnessHighFill />,
   },
   {
     text: "마감",
+    icon: <AiFillStar />,
   },
   {
     text: "퇴사",
