@@ -1,0 +1,61 @@
+#WorkUploadEditMenu {
+  padding-top: 50px;
+}
+#WorkUploadEditMenu .all-block {
+  margin: 0 auto;
+  width: 860px;
+  overflow: hidden;
+}
+#WorkUploadEditMenu tr {
+  margin-top: 10px;
+}
+#WorkUploadEditMenu td {
+  font-size: 16px;
+  line-height: 30px;
+}
+#WorkUploadEditMenu summary {
+  list-style: none;
+  margin-top: 10px;
+}
+#WorkUploadEditMenu .Indentation {
+  margin-right: 30px;
+}
+#WorkUploadEditMenu input {
+  background-color: #fefefe;
+  height: 25px;
+  width: 250px;
+  border: #fff;
+  border-bottom: 2px solid #d8d8d8;
+}
+#WorkUploadEditMenu button {
+  width: 50px;
+  height: 23px;
+  background-color: #2e2e2e;
+  color: #fafafa;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 0px;
+}
+#WorkUploadEditMenu .edit-btn {
+  margin-left: 10px;
+  background-color: #585858;
+}
+#WorkUploadEditMenu .detail-cont {
+  margin: 10px;
+  font-size: 14px;
+}
+#WorkUploadEditMenu .fourth-table svg {
+  color: black;
+  margin: 0px 10px 0px 10px;
+  width: 30px;
+  height: 20px;
+  font-size: 20px;
+}
+#WorkUploadEditMenu .delete-btn {
+  color: black;
+  background-color: #fefefe;
+  border: none;
+  width: 20px;
+  font-size: 20px;
+  margin-right: 5px;
+}
