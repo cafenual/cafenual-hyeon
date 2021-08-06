@@ -33,9 +33,8 @@ const WorkMenu = () => {
             </li>
           ))}
           <li className="list-right">
-            <a href="/work/listedit">목록수정</a>
-            <a href="/work/update">등록</a>
-            <a href="/work/edit">수정</a>
+            <a href="/notice/listedit">목록수정</a>
+            <a href="/work/uploadedit">등록 및 수정</a>
           </li>
         </ul>
       </div>

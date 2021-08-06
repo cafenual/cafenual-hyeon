@@ -9,20 +9,20 @@ import "./styles.css";
 const WorkList = ({ match }) => {
   const type = match.params.typeid;
 
+  const [test, setTest] = useState(false);
   const [FakeWorkData, setFakeWorkData] = useState([]);
 
   useEffect(() => {
     if (!type) {
-      setFakeWorkData(
-        WorkData.filter((data) => data.type === "매일" && data.time === "오픈")
-      );
+      setFakeWorkData(WorkData.filter((data) => data.type === "매일"));
     } else {
-      setFakeWorkData(
-        WorkData.filter((data) => data.type === "주간" && data.time === "오픈")
-      );
+      setFakeWorkData(WorkData.filter((data) => data.type === "주간"));
     }
+    console.log(type);
+    setTest(false);
   }, [type]);
 
+  useEffect(() => {});
   const onClick = (e) => {
     console.log(e);
   };
@@ -49,7 +49,7 @@ const WorkList = ({ match }) => {
                   <td>
                     <div className="inner-cont">
                       <span className="title-text">
-                        <details>
+                        <details open={test}>
                           <summary>
                             <WiMoonAltNew />
                             {data.title}

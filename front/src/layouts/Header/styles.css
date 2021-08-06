@@ -29,10 +29,6 @@
   align-items: center;
 }
 
-#Header .header-logo svg {
-  color: rgb(18, 113, 175);
-}
-
 #Header .header-logo .h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: bolder;

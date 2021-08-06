@@ -32,7 +32,7 @@ import ManagementList from "pages/Manage/ManageList";
 import Managementdetail from "pages/Manage/ManageDetail";
 import WorkList from "pages/Work/WorkList";
 import WorkListEdit from "pages/Work/WorkMenuEdit";
-import WorkUploadEdit from "pages/Work/WorkUploadEdit";
+import WorkUploadEdit from "pages/Work/WorkUploadEdit"
 
 function App() {
   return (
