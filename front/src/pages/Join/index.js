@@ -1,22 +1,69 @@
 import React, { useState } from "react";
+import { WiMoonAltWaxingGibbous1 } from "react-icons/wi";
+import axios from "axios";
 import "./styles.css";
+import { useHistory } from "react-router-dom";
 
 const Join = () => {
+  const history = useHistory(); //useHistory -> 주소를 바꿀수 있도록 도와주는 hooks
+  //예를들면 회원가입에 성공했으면 로그인페이지로 이동하게 해주는
+
+  const [form, setForm] = useState({
+    email: "",
+    name: "",
+    phoneNumber: "",
+    password: "",
+    passwordCheck: "",
+  });
+
+  const { email, name, phoneNumber, password, passwordCheck } = form; //비구조 할당 form.email을 안쓰고 email로 쓸수 있게함
+
+  const onChange = (e) => {
+    console.log(e.target);
+    const nextForm = {
+      //불필요한 리렌더링이 잃어나지 않게 form으로
+      ...form, //form복사해옴
+      [e.target.name]: e.target.value, //name은 여기서 내가 말한 이름 name이 아니라 변수명 name을 말함
+      //지금까지는 form을 복사해서 안에 내용물을 바꿔줌
+    };
+    setForm(nextForm); //여기서 form을 덮어 씌어줌
+  };
+
+  const onSubmit = (e) => {
+    e.preventDefault(); //예방하다 default가 기본 즉 submit은 새로고침이 기본이기때문에 그거예방
+    console.log("저 실행됬어요!!!");
+    console.log(form);
+
+    const body = {
+      //백엔드 바디
+      email,
+      password,
+      name,
+      phoneNumber,
+    };
+
+    axios
+      .post("http://localhost:4000/api/user/register", body)
+      .then((response) => {
+        console.log(response);
+        if (response.data.success) {  //회원가입에 성공하면
+          history.push("/");
+        }
+      });
+  };
+  /*
   const [userpw, setUserPw] = useState("");
   const [userpwCheck, setUserPwCheck] = useState("");
-
   const onChangepw = (e) => {
     setUserPw(e.target.value);
   };
   const onChangepwCheck = (e) => {
     setUserPwCheck(e.target.value);
   };
-
   const onSubmitCheck = (e) => {
     e.preventDefault(); //console을 확인하기 위해 submit을 막아놈(새로고침 막음)
     const num = userpw.search(/[0-9]/g);
     const eng = userpw.search(/[a-z]/gi);
-
     if (userpw.length < 8 || userpw.length > 20) {
       alert("비밀번호는 8자 이상 20자 이하입니다");
       return false;
@@ -30,17 +77,24 @@ const Join = () => {
       return false;
     }
   };
-
+*/
   return (
     <div id="Join">
       <div className="join_form">
         <center>
           <div className="joinform_title">회원가입</div>
         </center>
-        <form onSubmit={onSubmitCheck}>
+        <form onSubmit={onSubmit}>
+          {/*onSubmit={onSubmitCheck} */}
           <label>
             이름
-            <input type="text" name="user_id" required />
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={onChange}
+              required
+            />
           </label>
           <label>
             이메일
@@ -49,17 +103,25 @@ const Join = () => {
                 <a href="">이메일 확인</a>
               </center>
             </div>
-            <input type="email" name="user_email" required />
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={onChange}
+              required
+            />
           </label>
           <label>
             비밀번호
             <input
               className="password_input"
               type="password"
-              id="user_password"
+              name="password"
+              value={password}
+              onChange={onChange}
               required
-              onChange={onChangepw}
             />
+            {/*onChange={onChangepw}*/}
             <div class="explain">
               비밀번호는 영문과 숫자 포함하여 8글자 이상, 20글자 이하
             </div>
@@ -68,14 +130,22 @@ const Join = () => {
             비밀번호 확인
             <input
               type="password"
-              id="user_password_check"
+              name="passwordCheck"
+              value={passwordCheck}
+              onChange={onChange}
               required
-              onChange={onChangepwCheck}
             />
+            {/*onChange={onChangepwCheck} */}
           </lavel>
           <label>
             전화번호
-            <input type="number" name="user_tel" required />
+            <input
+              type="number"
+              name="phoneNumber"
+              value={phoneNumber}
+              onChange={onChange}
+              required
+            />
           </label>
           <button type="submit">가입하기</button>
         </form>
