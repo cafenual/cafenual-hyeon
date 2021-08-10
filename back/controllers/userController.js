@@ -2,7 +2,7 @@ import User from "../models/user";
 
 //회원가입
 export const register = async (req, res) => {
-  const { email, password, name } = req.body; //이렇게 하면 req.body.email하지 않고 email로 사용할 수 있다
+  const { email, password, name,phoneNumber } = req.body; //이렇게 하면 req.body.email하지 않고 email로 사용할 수 있다
 
   try {
     //이메일이 디비에 있는지 확인
@@ -24,6 +24,7 @@ export const register = async (req, res) => {
       email, //email = email과 같은 문법
       password,
       name,
+      phoneNumber
     });
 
     await user.setPassword(password); //암호화

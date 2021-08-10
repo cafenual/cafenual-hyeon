@@ -25,6 +25,11 @@ const UserSchema = new Schema(
       trim: true,
       minLength: 6, //최소 6글자
     },
+    phoneNumber:{
+      type:String,
+      required:true,
+      trim:true,
+    },
     wage: {
       type: Number,
       trim: true,

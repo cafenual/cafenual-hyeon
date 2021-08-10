@@ -5,8 +5,11 @@ import "dotenv/config"; //.env파일 안에서는 뛰어쓰기하면 인식안�
 import userRouter from "./routers/userRouter";
 import noticeRouter from "./routers/noticeRouter";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 
 const app = express(); //express 실행시킴
+app.use(cors());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true })); //미들웨어 아래코드가 실행되기전에 중간에 실행
 app.use(cookieParser())
