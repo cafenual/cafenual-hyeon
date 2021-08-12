@@ -10,6 +10,58 @@ import moon from "static/img/moon.jpg";
 import { BsAwardFill, BsAward, BsFillBrightnessHighFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 
+export const colorData = [
+  { color: "빨강" },
+  { color: "파랑" },
+  { color: "연두" },
+  { color: "초록" },
+  { color: "파랑" },
+  { color: "남색" },
+  { color: "회색" },
+  { color: "하늘" },
+  { color: "남색" },
+  { color: "주황" },
+  { color: "갈색" },
+  { color: "분홍" },
+];
+export const eventData = [
+  {
+    id: "1",
+    title: "이소현 (06.5-18)",
+    start: "2021-08-28",
+    end: "2021-08-30",
+    color: "#FF0080",
+  }, //왜 하루 전날까지 표시됨?
+  {
+    id: "12",
+    title: "이도현1 (02.5-23)",
+    start: "2021-08-12",
+    end: "2021-08-16",
+    color: "#8000FF",
+  },
+  {
+    id: "12",
+    title: "이도현2 (02.5-23)",
+    start: "2021-08-10",
+    end: "2021-08-15",
+    color: "#424242",
+  },
+  {
+    id: "2",
+    title: "신미르 (04-23)",
+    start: "2021-08-02",
+    end: "2021-08-05",
+    color: "#0174DF",
+  },
+  {
+    id: "12",
+    title: "이지호",
+    start: "2021-08-11",
+    end: "2021-08-14",
+    color: "#088A08",
+  },
+  { id: "3", title: "이지호2", date: "2021-08-17", color: "#B45F04" },
+];
 export const WorkData = [
   {
     type: "매일",
