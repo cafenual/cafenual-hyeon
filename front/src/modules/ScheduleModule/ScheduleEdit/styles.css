@@ -1,0 +1,83 @@
+#ScheduleEdit {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+#ScheduleEdit .all-block {
+  position: absolute;
+  z-index: 999;
+  background-color: #fefefe;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 450px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 5px #bdbdbd;
+}
+#ScheduleEdit .top-block {
+  padding: 20px;
+  border-bottom: 1px solid #d8d8d8;
+}
+#ScheduleEdit .middle-block {
+  position: relative;
+  margin: 20px;
+}
+#ScheduleEdit .input-box {
+  display: flex;
+  margin: 10px;
+}
+#ScheduleEdit .names {
+  width: 120px;
+  height: 30px;
+}
+#ScheduleEdit .add-input {
+  background-color: #fefefe;
+  height: 35px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #bdbdbd;
+  font-size: 15px;
+}
+#ScheduleEdit .add-btn {
+  border: none;
+  width: 65px;
+  height: 35px;
+  background-color: #f2f2f2;
+}
+#ScheduleEdit .middle-block {
+  margin: 0px 20px 0px 20px;
+  height: 100%;
+  font-size: 15px;
+}
+#ScheduleEdit select {
+  width: 100%;
+}
+#ScheduleEdit select {
+  width: 400px; /* 원하는 너비설정 */
+  padding: 0.8em 0.5em; /* 여백으로 높이 설정 */
+  font-family: inherit; /* 폰트 상속 */
+  border-radius: 0px; /* iOS 둥근모서리 제거 */
+  border: none;
+  font-size: 15px;
+  background-color: #fefefe;
+}
+#ScheduleEdit .bottom-block {
+  display: flex;
+  margin: 0px 5px 20px 5px;
+}
+#ScheduleEdit .btns {
+  width: 195px;
+  margin: 5px;
+  height: 40px;
+  background-color: #2e2e2e;
+  color: #fafafa;
+  font-size: 13px;
+  cursor: pointer;
+}
