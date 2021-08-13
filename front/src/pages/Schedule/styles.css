@@ -1,0 +1,8 @@
+#Schedule {
+  padding-top: 50px;
+}
+#Schedule .all-block {
+  margin: auto;
+  width: 900px;
+  overflow: hidden;
+}
