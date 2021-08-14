@@ -32,7 +32,8 @@ import ManagementList from "pages/Manage/ManageList";
 import Managementdetail from "pages/Manage/ManageDetail";
 import WorkList from "pages/Work/WorkList";
 import WorkListEdit from "pages/Work/WorkMenuEdit";
-import WorkUploadEdit from "pages/Work/WorkUploadEdit"
+import WorkUploadEdit from "pages/Work/WorkUploadEdit";
+import Schedule from "pages/Schedule";
 
 function App() {
   return (
@@ -119,11 +120,8 @@ function App() {
             />
             <Route path="/staff/work/:typeid?" exact component={WorkList} />
             <Route path="/work/listedit" exact component={WorkListEdit} />
-            <Route
-              path="/work/uploadedit"
-              exact
-              component={WorkUploadEdit}
-            />
+            <Route path="/work/uploadedit" exact component={WorkUploadEdit} />
+            <Route path="/Schedule" exact component={Schedule} />
           </Switch>
         </div>
       </BrowserRouter>

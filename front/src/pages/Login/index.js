@@ -94,7 +94,7 @@ const Login = () => {
             <button type="submit" className="login-btn">
               로그인
             </button>
-            <p>{error}</p>
+            <p className="error-text">{error}</p>
           </form>
         </div>
       </div>

@@ -11,6 +11,8 @@ body {
 
 button {
   font-family: "Noto Sans KR", sans-serif;
+  border: none;
+  background: none;
 }
 
 #container {
@@ -53,6 +55,7 @@ a:hover {
 
 input:focus {
   outline: none;
+  margin: 0;
 }
 
 #main {

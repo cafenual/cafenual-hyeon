@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { WiMoonAltWaxingGibbous1 } from "react-icons/wi";
 import axios from "axios";
 import "./styles.css";
 import { useHistory } from "react-router-dom";
@@ -15,6 +14,7 @@ const Join = () => {
     password: "",
     passwordCheck: "",
   });
+  const [text, setText] = useState("");
 
   const { email, name, phoneNumber, password, passwordCheck } = form; //비구조 할당 form.email을 안쓰고 email로 쓸수 있게함
 
@@ -31,6 +31,22 @@ const Join = () => {
 
   const onSubmit = (e) => {
     e.preventDefault(); //예방하다 default가 기본 즉 submit은 새로고침이 기본이기때문에 그거예방
+
+    const num = password.search(/[0-9]/g);
+    const eng = password.search(/[a-z]/gi);
+    if (password.length < 8 || password.length > 20) {
+      setText("* 비밀번호는 8자 이상 20자 이하입니다");
+      return false;
+    }
+    if (num < 0 || eng < 0) {
+      setText("* 영문, 숫자를 혼합하여 입력해주세요");
+      return false;
+    }
+    if (password !== passwordCheck) {
+      setText("* 비밀번호가 일치하지 않습니다");
+      return false;
+    }
+
     console.log("저 실행됬어요!!!");
     console.log(form);
 
@@ -46,49 +62,25 @@ const Join = () => {
       .post("http://localhost:4000/api/user/register", body)
       .then((response) => {
         console.log(response);
-        if (response.data.success) {  //회원가입에 성공하면
+        if (response.data.success) {
+          //회원가입에 성공하면
           history.push("/");
         }
       });
   };
-  /*
-  const [userpw, setUserPw] = useState("");
-  const [userpwCheck, setUserPwCheck] = useState("");
-  const onChangepw = (e) => {
-    setUserPw(e.target.value);
-  };
-  const onChangepwCheck = (e) => {
-    setUserPwCheck(e.target.value);
-  };
-  const onSubmitCheck = (e) => {
-    e.preventDefault(); //console을 확인하기 위해 submit을 막아놈(새로고침 막음)
-    const num = userpw.search(/[0-9]/g);
-    const eng = userpw.search(/[a-z]/gi);
-    if (userpw.length < 8 || userpw.length > 20) {
-      alert("비밀번호는 8자 이상 20자 이하입니다");
-      return false;
-    }
-    if (num < 0 || eng < 0) {
-      alert("영문, 숫자를 혼합하여 입력해주세요");
-      return false;
-    }
-    if (userpw !== userpwCheck) {
-      alert("비밀번호가 일치하지 않습니다");
-      return false;
-    }
-  };
-*/
+
   return (
     <div id="Join">
-      <div className="join_form">
+      <div className="join-form">
         <center>
           <div className="joinform_title">회원가입</div>
         </center>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className="form-block">
           {/*onSubmit={onSubmitCheck} */}
           <label>
             이름
             <input
+              className="join-input"
               type="text"
               name="name"
               value={name}
@@ -104,6 +96,7 @@ const Join = () => {
               </center>
             </div>
             <input
+              className="join-input"
               type="email"
               name="email"
               value={email}
@@ -129,6 +122,7 @@ const Join = () => {
           <lavel>
             비밀번호 확인
             <input
+              className="join-input"
               type="password"
               name="passwordCheck"
               value={passwordCheck}
@@ -140,6 +134,7 @@ const Join = () => {
           <label>
             전화번호
             <input
+              className="join-input"
               type="number"
               name="phoneNumber"
               value={phoneNumber}
@@ -148,6 +143,7 @@ const Join = () => {
             />
           </label>
           <button type="submit">가입하기</button>
+          <div className="error-text">{text}</div>
         </form>
       </div>
     </div>

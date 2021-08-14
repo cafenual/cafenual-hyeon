@@ -26,7 +26,10 @@
 #HandOver .search-btn {
   width: 34px;
   height: 42px;
+  border: none;
   border-bottom: 2px solid #a4a4a4;
+  margin-bottom: 20px;
+  background-color: #fefefe;
 }
 #HandOver .middle-block {
   overflow: hidden;

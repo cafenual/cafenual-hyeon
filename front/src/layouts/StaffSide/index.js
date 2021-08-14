@@ -5,6 +5,7 @@ import {
   BsFillPersonLinesFill,
   BsCalendarFill,
   BsFileText,
+  BsCardList,
 } from "react-icons/bs";
 import "./styles.css";
 
@@ -41,7 +42,7 @@ const StaffSide = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={"/staff/schedule"} exact activeStyle={activeStyle}>
+            <NavLink to={"/schedule"} exact activeStyle={activeStyle}>
               <BsCalendarFill />
               <span>스케줄러</span>
             </NavLink>

@@ -1,7 +1,7 @@
 #Join {
   padding-top: 160px;
 }
-#Join .join_form {
+#Join .join-form {
   margin: 0 auto;
   width: 455px;
   height: 700px;
@@ -11,22 +11,21 @@
   font-size: 30px;
   color: #333;
 }
-#Join input,
-button {
+#Join button[type="submit"] {
+  width: 450px;
+  height: 35px;
+  background-color: #424242;
+  color: #fff;
+  margin: 0px;
+  border: none;
+}
+#Join .password_input {
   background-color: #fefefe;
   height: 25px;
   width: 450px;
   margin-bottom: 50px;
   border: #fff;
   border-bottom: 2px solid #d8d8d8;
-}
-#Join button[type="submit"] {
-  height: 35px;
-  background-color: #424242;
-  color: #fff;
-  margin: 0px;
-}
-#Join .password_input {
   margin-bottom: 10px;
 }
 #Join .email_check {
@@ -45,4 +44,18 @@ button {
   #Join input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+#Join .join-input {
+  background-color: #fefefe;
+  height: 25px;
+  width: 450px;
+  margin-bottom: 50px;
+  border: #fff;
+  border-bottom: 2px solid #d8d8d8;
+}
+#Join .error-text {
+  margin-top: 10px;
+  color: red;
+  font-size: 13px;
+  font-weight: lighter;
 }
