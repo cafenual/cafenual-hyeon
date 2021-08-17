@@ -5,8 +5,8 @@ import FullCalendar from "@fullcalendar/react"; // must go before plugins
 import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
 import interactionPlugin from "@fullcalendar/interaction"; // needed for dayClick
 import { eventData } from "static/FakeDates";
-import ScheduleUpload from "modules/ScheduleModule/ScheduleUpload";
-import ScheduleEdit from "modules/ScheduleModule/ScheduleEdit";
+import ScheduleUpload from "components/Modal/ScheduleModal/ScheduleUpload";
+import ScheduleEdit from "components/Modal/ScheduleModal/ScheduleEdit";
 
 const Schedule = () => {
   const [IsModal, setIsModal] = useState(false);

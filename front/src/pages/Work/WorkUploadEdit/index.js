@@ -7,7 +7,7 @@ import {
   WorkMenuData,
 } from "static/FakeDates";
 import Header from "layouts/Header";
-import WorkEditForm from "modules/WorkEditModule";
+import WorkEditForm from "components/Modal/WorkEditModal";
 
 const WorkUploadEdit = () => {
   const [IsModal, setIsModal] = useState(false);

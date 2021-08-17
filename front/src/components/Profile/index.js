@@ -7,7 +7,7 @@ const Profile = () => {
     <div id="Profile">
       <div className="profile-top">
         <span>계정정보</span>
-        <a href={`/account`}>
+        <a href={`/staff/account`}>
           <span>더보기</span>
         </a>
       </div>
