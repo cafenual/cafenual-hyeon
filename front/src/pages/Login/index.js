@@ -1,10 +1,13 @@
 import axios from "axios";
+import { SetUser } from "modules/users";
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import "./styles.css";
 
 const Login = () => {
   const history = useHistory();
+  const dispatch = useDispatch(); //useDispatch는 리덕스에서 디스패치를 불러와주는 아이
 
   const [error, setError] = useState("");
 
@@ -52,8 +55,26 @@ const Login = () => {
     //       기다리라고 await을 해주어야함
 
     try {
-      await axios.post("http://localhost:4000/api/user/login", body);
-      history.push("/");
+      const response = await axios.post(
+        "http://localhost:4000/api/user/login",
+        body
+      );
+      console.log(response.data.user); //담아오는 값 확인
+
+      const userBody = {
+        //내가 필요한 6가지만 모아놓자
+        email: response.data.user.email,
+        name: response.data.user.name,
+        role: response.data.user.role,
+        wage: response.data.user.wage,
+        status: response.data.user.status,
+        phoneNumber: response.data.user.phoneNumber,
+      };
+
+      dispatch(SetUser(userBody)); //안에 값 넣어서 옮겨주기
+      sessionStorage.setItem("user", JSON.stringify(userBody)); //sessionStorage는 페이지를 껐다 키면 없어짐, localstorage는 내가 지워줄때까지 계속있음
+      //JSON.stringify는 json으로 된 아이를 문자열로 바꿔주어라
+      history.push("/dashboard");
     } catch (e) {
       setError(e.response.data.message); //비번 또는 아이디 잘못됬을때
     }
